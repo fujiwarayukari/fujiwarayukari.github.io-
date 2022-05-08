@@ -1,0 +1,9 @@
+@use "global" as *;
+
+
+
+.header__hamburger span{
+  color: $white;
+  width: rem(24);
+  height: rem(2);
+}
