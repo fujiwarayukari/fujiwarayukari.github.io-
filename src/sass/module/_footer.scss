@@ -1,0 +1,45 @@
+@use "global" as *;
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $black;
+  height: rem(372);
+  width: 100vw;
+}
+
+.footer__inner {
+  height: inherit;
+  padding: rem(48) 0;
+  text-align: center;
+}
+
+.footer__logo {
+  width: rem(70);
+  margin: 0 auto;
+}
+
+.footer__logo a{
+  display: block;
+  width: 100%;
+}
+
+.footer__nav {
+  color: $white;
+}
+
+.footer__item {
+  text-align: center;
+}
+
+.footer__item a{
+  display: block;
+  color: $white;
+  padding-top: rem(4);
+  padding-bottom: rem(4);
+  width: 100%;
+  cursor: pointer;
+  font-weight: $normal;
+}

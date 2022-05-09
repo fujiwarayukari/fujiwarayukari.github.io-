@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.copyright {
+  margin-top: rem(28);
+  color: $white;
+  text-align: center;
+  font-size: rem(11);
+}

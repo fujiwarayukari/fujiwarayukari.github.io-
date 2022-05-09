@@ -173,48 +173,62 @@ select::-ms-expand {
   display: none;
 }
 
-header {
+.copyright {
+  margin-top: 28px;
+  margin-top: 1.75rem;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  font-size: 0.6875rem;
+}
+
+footer {
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   background-color: #111;
-  height: 50px;
-  height: 3.125rem;
+  height: 372px;
+  height: 23.25rem;
   width: 100vw;
 }
 
-.header__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.footer__inner {
   height: inherit;
-  padding: 0 22px;
-  padding: 0 1.375rem;
-}
-@media screen and (min-width: 768px) {
-  .header__inner {
-    padding-left: 2rem;
-    padding-right: 0;
-  }
+  padding: 48px 0;
+  padding: 3rem 0;
+  text-align: center;
 }
 
-.header__logo {
+.footer__logo {
   width: 70px;
   width: 4.375rem;
-  position: relative;
-  z-index: 9999;
+  margin: 0 auto;
 }
-@media screen and (min-width: 768px) {
-  .header__logo {
-    width: 5.875rem;
-  }
+
+.footer__logo a {
+  display: block;
+  width: 100%;
+}
+
+.footer__nav {
+  color: #fff;
+}
+
+.footer__item {
+  text-align: center;
+}
+
+.footer__item a {
+  display: block;
+  color: #fff;
+  padding-top: 4px;
+  padding-top: 0.25rem;
+  padding-bottom: 4px;
+  padding-bottom: 0.25rem;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 400;
 }
 
 .hamburger {
@@ -271,52 +285,76 @@ header {
           transform: rotate(-45deg);
 }
 
-.sp-nav {
-  position: absolute;
+header {
+  position: fixed;
   top: 0;
-  left: 0%;
-  right: 0%;
+  left: 0;
+  right: 0;
   background-color: #111;
-  width: 100%;
-  height: 100vh;
-  z-index: 8888;
-}
-@media screen and (min-width: 768px) {
-  .sp-nav {
-    display: none;
-  }
+  height: 50px;
+  height: 3.125rem;
+  width: 100vw;
 }
 
-.sp-nav__items {
-  padding-top: 209px;
-  padding-top: 13.0625rem;
-  padding-bottom: 190px;
-  padding-bottom: 11.875rem;
-  height: 100vh;
-  overflow: scroll;
-}
-
-.sp-nav__item {
-  text-align: center;
-}
-
-.sp-nav__item a {
-  display: block;
-  color: #fff;
-  padding-top: 16px;
-  padding-top: 1rem;
-  padding-bottom: 16px;
-  padding-bottom: 1rem;
-  width: 100%;
-  cursor: pointer;
-  font-weight: 400;
-}
-
-.pc-nav {
-  height: inherit;
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: inherit;
+  padding: 0 22px;
+  padding: 0 1.375rem;
+}
+@media screen and (min-width: 768px) {
+  .header__inner {
+    padding-left: 2rem;
+    padding-right: 0;
+  }
+}
+
+.header__logo {
+  width: 70px;
+  width: 4.375rem;
+  position: relative;
+  z-index: 9999;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    width: 5.875rem;
+  }
+}
+
+.inner {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .inner {
+    max-width: 1150px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+.pc-nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .pc-nav {
+    display: block;
+    height: inherit;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .pc-nav__items {
@@ -358,18 +396,44 @@ header {
   padding: 0 2rem;
 }
 
-.inner {
+.sp-nav {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  right: 0%;
+  background-color: #111;
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-right: auto;
-  margin-left: auto;
+  height: 100vh;
+  z-index: 8888;
 }
 @media screen and (min-width: 768px) {
-  .inner {
-    max-width: 1150px;
-    padding-right: 25px;
-    padding-left: 25px;
+  .sp-nav {
+    display: none;
   }
+}
+
+.sp-nav__items {
+  padding-top: 209px;
+  padding-top: 13.0625rem;
+  padding-bottom: 190px;
+  padding-bottom: 11.875rem;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.sp-nav__item {
+  text-align: center;
+}
+
+.sp-nav__item a {
+  display: block;
+  color: #fff;
+  padding-top: 16px;
+  padding-top: 1rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 400;
 }
 /*# sourceMappingURL=styles.css.map */
