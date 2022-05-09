@@ -16,12 +16,21 @@ header {
   justify-content: space-between;
   height: inherit;
   padding: 0 rem(22);
+
+  @include mq ('md'){
+    padding-left: rem(32);
+    padding-right:0;
+  }
 }
 
 .header__logo {
   width: rem(70);
   position: relative;
   z-index: 9999;
+
+  @include mq ('md'){
+    width:rem(94);
+  }
 }
 
 .hamburger{
@@ -97,8 +106,42 @@ header {
 .sp-nav__item a{
   display: block;
   color: $white;
-  padding-top: rem(17);
-  padding-bottom: rem(17);
+  padding-top: rem(16);
+  padding-bottom: rem(16);
   width: 100%;
   cursor: pointer;
+  font-weight: $normal;
+}
+
+.pc-nav {
+  height: inherit;
+  align-items: center;
+}
+
+.pc-nav__items {
+  height: inherit;
+  display: flex;
+}
+
+.pc-nav__item {
+  height: inherit;
+  color: $white;
+}
+
+.pc-nav__item a {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 rem(16);
+}
+
+.pc-nav__item.pc-nav__item--white{
+  margin-left: rem(16);
+}
+
+.pc-nav__item.pc-nav__item--white a{
+  color: $background;
+  background-color: $white;
+  padding: 0 rem(32);
 }
