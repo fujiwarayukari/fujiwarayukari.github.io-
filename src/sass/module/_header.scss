@@ -1,9 +1,66 @@
 @use "global" as *;
 
-
-
-.header__hamburger span{
-  color: $white;
-  width: rem(24);
-  height: rem(2);
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $black;
+  height: rem(50);
+  width: 100vw;
 }
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  padding: 0 rem(22);
+}
+
+.header__logo {
+  width: rem(70);
+  position: relative;
+  z-index: 9999;
+}
+
+.hamburger{
+  z-index: 9999;
+}
+
+.hamburger span{
+  position: relative;
+  display: block;
+  height: rem(2);
+  width: rem(24);
+  background-color: $white;
+  transition: 0.3s ease-in-out;
+}
+
+.hamburger span:nth-child(1){
+  top: 0;
+}
+
+.hamburger span:nth-child(2){
+  margin: rem(4) 0;  
+}
+
+.hamburger span:nth-child(3){
+  top: 0;
+}
+
+.hamburger.is-open span:nth-child(1){
+  top: rem(5);
+  transform: rotate(45deg);
+}
+
+.hamburger.is-open span:nth-child(2){
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.hamburger.is-open span:nth-child(3){
+  top: rem(-7);
+  transform: rotate(-45deg);
+}
+
