@@ -26,6 +26,24 @@
   align-items: center;
   justify-content: center;
   padding: 0 rem(16);
+  position: relative;
+}
+
+.pc-nav__item a::after{
+  position: absolute;
+  content:'';
+  
+  width: calc( 100% - rem(32));
+  height: 1px;
+  background-color: $sub-accent-color;
+  bottom:rem(8);
+  transform: scale(0, 1);
+  transform-origin:center top;
+  transition:transform 0.3s;
+}
+
+.pc-nav__item a:hover::after{
+  transform:scale(1, 1);
 }
 
 .pc-nav__item.pc-nav__item--white{
@@ -36,4 +54,20 @@
   color: $background;
   background-color: $white;
   padding: 0 rem(32);
+}
+
+.pc-nav__item.pc-nav__item--white a::after{
+  position: absolute;
+  content:'';
+  width: calc( 100% - rem(64));
+  height: 1px;
+  background-color: $sub-accent-color;
+  bottom:rem(8);
+  transform: scale(0, 1);
+  transform-origin:center top;
+  transition:transform 0.3s;
+}
+
+.pc-nav__item.pc-nav__item--white a:hover::after{
+  transform:scale(1, 1);
 }
