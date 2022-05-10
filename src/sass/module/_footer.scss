@@ -8,17 +8,41 @@ footer {
   background-color: $black;
   height: rem(372);
   width: 100vw;
+
+  @include mq ('md'){
+    height: rem(197);
+  }
 }
 
 .footer__inner {
   height: inherit;
   padding: rem(48) 0;
   text-align: center;
+  
+  @include mq ('md'){
+    padding: rem(18) rem(15) rem(27) rem(32);
+  }
+}
+
+.footer__contents {
+  @include mq ('md'){
+    display: flex;
+    justify-content: space-between;
+    height: rem(50);
+
+  }
 }
 
 .footer__logo {
   width: rem(70);
   margin: 0 auto;
+
+  @include mq ('md'){
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .footer__logo a{
@@ -28,9 +52,21 @@ footer {
 
 .footer__nav {
   color: $white;
+  margin-top: rem(8);
+  @include mq ('md'){
+    height: inherit;
+  }
+}
+
+.footer__items {
+  @include mq ('md'){
+    display: flex;
+    height: inherit;
+  }
 }
 
 .footer__item {
+  height: inherit;
   text-align: center;
 }
 
@@ -40,6 +76,38 @@ footer {
   padding-top: rem(4);
   padding-bottom: rem(4);
   width: 100%;
-  cursor: pointer;
   font-weight: $normal;
+  letter-spacing: rem(2);
+  
+  @include mq ('md'){
+    line-height: (35 / 16);
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 rem(16);
+    position: relative;
+  }
+}
+
+.footer__item a::after{
+  position: absolute;
+  content:'';  
+  width: calc( 100% - rem(32));
+  height: 1px;
+  background-color: $sub-accent-color;
+  bottom:rem(8);
+  transform: scale(0, 1);
+  transform-origin:center top;
+  transition:transform 0.3s;
+}
+
+.footer__item a:hover::after{
+  transform:scale(1, 1);
+}
+
+.footer__item--sp {
+  @include mq ('md'){
+    display: none;
+  }
 }
