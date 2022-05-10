@@ -80,7 +80,7 @@ footer {
   letter-spacing: rem(2);
   
   @include mq ('md'){
-    line-height: (35 / 16);
+    line-height: calc(35 / 16);
     height: inherit;
     display: flex;
     align-items: center;

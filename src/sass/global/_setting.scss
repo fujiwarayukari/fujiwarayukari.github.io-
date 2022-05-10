@@ -122,6 +122,6 @@ $mediaquerys: (
   padding: rem(10) 0;
 
   @include mq ('md'){
-    line-height:(54 / 16);
+    line-height:calc(54 / 16);
   }
 }
