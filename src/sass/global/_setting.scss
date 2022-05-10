@@ -101,3 +101,27 @@ $mediaquerys: (
     display: none;
   }
 }
+
+
+////////////////////
+// ボタン
+////////////////////
+
+@mixin btn{
+  background-color: $background;
+  color: $white;
+  border: 1px solid $white;
+  display: block;
+  max-width: rem(335);
+  width: 100%;
+  font-size: rem(20);
+  font-weight: $normal;
+  letter-spacing: rem(2);
+  text-align: center;
+  cursor: pointer;
+  padding: rem(10) 0;
+
+  @include mq ('md'){
+    line-height:(54 / 16);
+  }
+}

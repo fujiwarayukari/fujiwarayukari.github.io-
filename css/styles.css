@@ -452,6 +452,34 @@ header {
   }
 }
 
+.btn {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #fff;
+  display: block;
+  max-width: 335px;
+  max-width: 20.9375rem;
+  width: 100%;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 0;
+  padding: 0.625rem 0;
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    line-height: 3.375;
+  }
+}
+
+.news {
+  margin-top: 300px;
+}
+
 .pc-nav {
   display: none;
 }
