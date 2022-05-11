@@ -1,17 +1,12 @@
 @use "global" as *;
 
 .btn {
-  @include btn;
-
-  @include mq ('md'){
-    @include btn('small');
-  }
+  @include btn('normal');
 }
 
 .btn a {
   display: inline-block;
   width: inherit;
-  height: inherit;
   padding: rem(10) 0;
 
   @include mq ('md'){
@@ -21,7 +16,7 @@
 
 .btn a:hover{
   @include mq ('md'){
-    background-color: $background;
-    color: $white;
+    background-color:$white ;
+    color: $background;
   }
 }

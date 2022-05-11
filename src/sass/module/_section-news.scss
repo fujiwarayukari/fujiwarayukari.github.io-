@@ -88,3 +88,15 @@
     transform: scale(1, 1);
   }
 }
+
+
+.section-news__btn {
+  @include mq ('md'){
+    background-color: $white;
+    color: #000;
+    font-size: rem(16);
+    font-weight:500 ;
+    border: none;
+    padding: rem(4) 0;
+  }
+}

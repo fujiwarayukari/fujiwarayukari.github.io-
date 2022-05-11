@@ -181,6 +181,7 @@ select::-ms-expand {
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 400;
+  line-height: 1.45;
   letter-spacing: 2px;
   letter-spacing: 0.125rem;
   text-align: center;
@@ -192,18 +193,14 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .btn {
-    background-color: #fff;
-    color: #000;
     font-size: 1rem;
-    font-weight: 500;
-    border: none;
+    max-width: 22.5rem;
   }
 }
 
 .btn a {
   display: inline-block;
   width: inherit;
-  height: inherit;
   padding: 10px 0;
   padding: 0.625rem 0;
 }
@@ -215,8 +212,8 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .btn a:hover {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
   }
 }
 
@@ -728,6 +725,17 @@ header {
             transform-origin: left top;
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-news__btn {
+    background-color: #fff;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    padding: 0.25rem 0;
   }
 }
 
