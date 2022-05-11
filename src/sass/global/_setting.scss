@@ -106,22 +106,34 @@ $mediaquerys: (
 ////////////////////
 // ボタン
 ////////////////////
+$initType: 'normal';
+@mixin btn($type: $initType){
+  
+  @if( $type == 'normal'){    
+    background-color: $background;
+    color: $white;
+    border: 1px solid $white;
+    display: block;
+    max-width: rem(335);
+    width: 100%;
+    font-size: rem(20);
+    font-weight: $normal;
+    letter-spacing: rem(2);
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  @else if ($type == 'white'){
+    background-color: $white;
+    color: #000;
+  }
 
-@mixin btn{
-  background-color: $background;
-  color: $white;
-  border: 1px solid $white;
-  display: block;
-  max-width: rem(335);
-  width: 100%;
-  font-size: rem(20);
-  font-weight: $normal;
-  letter-spacing: rem(2);
-  text-align: center;
-  cursor: pointer;
-  padding: rem(10) 0;
-
-  @include mq ('md'){
-    line-height:calc(54 / 16);
+  @else if ($type == 'small'){
+    background-color: $white;
+    width: rem(134);
+    color: #000;
+    font-size: rem(16);
+    font-weight:500 ;
+    border: none;
   }
 }
