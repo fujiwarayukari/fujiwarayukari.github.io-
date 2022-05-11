@@ -114,13 +114,14 @@ $initType: 'normal';
     color: $white;
     border: 1px solid $white;
     display: block;
-    max-width: rem(335);
-    width: 100%;
     font-size: rem(20);
     font-weight: $normal;
     letter-spacing: rem(2);
     text-align: center;
     cursor: pointer;
+    max-width: rem(335);
+    width: 100%;
+    margin: 0 auto;
   }
   
   @else if ($type == 'white'){
@@ -130,7 +131,6 @@ $initType: 'normal';
 
   @else if ($type == 'small'){
     background-color: $white;
-    width: rem(134);
     color: #000;
     font-size: rem(16);
     font-weight:500 ;
