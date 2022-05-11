@@ -1,11 +1,11 @@
 @use "global" as *;
 
-.news {
+.section-news {
   margin-top: 300px;
   background-color: $black;
 }
 
-.news__inner {
+.section-news__inner {
   padding: rem(24) rem(20);
   width: 100%;
 
@@ -15,7 +15,7 @@
   }
 }
 
-.news__content {
+.section-news__content {
   color: $white;
 
   @include mq ('md'){
@@ -24,22 +24,22 @@
   }
 }
 
-.news__information {
+.section-news__information {
   @include mq ('md'){
     margin-right: rem(40);
   }
 }
 
-.news__date,.news__category {
+.section-news__date,.news__category {
   display: inline-block;
 }
 
-.news__date {
+.section-news__date {
   margin-right: rem(32);
 
 }
 
-.news__category {
+.section-news__category {
   line-height: 1;
   font-size: rem(14);
   border: 1px solid $white;
@@ -47,7 +47,7 @@
   min-width: rem(101);
 }
 
-.news__body {
+.section-news__body {
   @include mq ('md'){
     margin-right: rem(32);
     max-width: rem(588);
@@ -55,7 +55,7 @@
   }
 }
 
-.news__body a{
+.section-news__body a{
   display: block;
   padding: rem(16) 0 rem(28);
   width: 100%;
@@ -69,7 +69,7 @@
   }
 }
 
-.news__body a::after {
+.section-news__body a::after {
   position: absolute;
   bottom: rem(6);
   left: 0;
@@ -82,14 +82,14 @@
   transition: transform .3s;
 }
 
-.news__body a:hover::after {
+.section-news__body a:hover::after {
   @include mq ('md'){
     transform-origin: left top;
     transform: scale(1, 1);
   }
 }
 
-.news__button {
+.section-news__button {
   display: flex;
   align-items: center;
   justify-content: center;

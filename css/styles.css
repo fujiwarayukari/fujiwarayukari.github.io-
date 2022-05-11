@@ -499,28 +499,28 @@ header {
   }
 }
 
-.news {
+.section-news {
   margin-top: 300px;
   background-color: #111;
 }
 
-.news__inner {
+.section-news__inner {
   padding: 24px 20px;
   padding: 1.5rem 1.25rem;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .news__inner {
+  .section-news__inner {
     max-width: 67.625rem;
     margin: 0 auto;
   }
 }
 
-.news__content {
+.section-news__content {
   color: #fff;
 }
 @media screen and (min-width: 768px) {
-  .news__content {
+  .section-news__content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -531,21 +531,21 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .news__information {
+  .section-news__information {
     margin-right: 2.5rem;
   }
 }
 
-.news__date, .news__category {
+.section-news__date, .news__category {
   display: inline-block;
 }
 
-.news__date {
+.section-news__date {
   margin-right: 32px;
   margin-right: 2rem;
 }
 
-.news__category {
+.section-news__category {
   line-height: 1;
   font-size: 14px;
   font-size: 0.875rem;
@@ -557,14 +557,14 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .news__body {
+  .section-news__body {
     margin-right: 2rem;
     max-width: 36.75rem;
     width: 100%;
   }
 }
 
-.news__body a {
+.section-news__body a {
   display: block;
   padding: 16px 0 28px;
   padding: 1rem 0 1.75rem;
@@ -575,13 +575,13 @@ header {
   font-weight: 400;
 }
 @media screen and (min-width: 768px) {
-  .news__body a {
+  .section-news__body a {
     padding: 0.3125rem;
     position: relative;
   }
 }
 
-.news__body a::after {
+.section-news__body a::after {
   position: absolute;
   bottom: 6px;
   bottom: 0.375rem;
@@ -601,7 +601,7 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .news__body a:hover::after {
+  .section-news__body a:hover::after {
     -webkit-transform-origin: left top;
             transform-origin: left top;
     -webkit-transform: scale(1, 1);
@@ -609,7 +609,7 @@ header {
   }
 }
 
-.news__button {
+.section-news__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
