@@ -4,6 +4,16 @@
   @include btn('normal');
 }
 
+.btn span {
+  position: relative;
+  z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
+  color:$white;
+}
+
+.btn:hover span{
+  color:$background;
+}
+
 .btn a {
   display: inline-block;
   width: inherit;
@@ -11,12 +21,27 @@
 
   @include mq ('md'){
     padding: rem(4) rem(22);
+    position: relative;
   }
 }
 
-.btn a:hover{
+.btn a::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: '';
+  background: $white;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform .3s;
+}
+
+.btn a:hover::before {
   @include mq ('md'){
-    background-color:$white ;
-    color: $background;
+    transform-origin: left top;
+    transform: scale(1, 1);
   }
 }

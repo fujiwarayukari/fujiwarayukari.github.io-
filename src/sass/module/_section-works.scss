@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .section-works {
-  background-color: $black;
+  background: linear-gradient(90deg, $black 0%, $black 30%, $background 30%, $background 100%);
 }
 
 .section-title {
@@ -10,9 +10,10 @@
 
 .section-works__inner {
   @include mq ('md'){
-    max-width: $inner;
+    max-width: rem(1190);
     width: 100%;
     margin: 0 auto;
+    padding: rem(80) 0;
   }
 }
 
