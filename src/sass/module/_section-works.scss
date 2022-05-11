@@ -9,12 +9,38 @@
 }
 
 .section-works__inner {
+  @include mq ('md'){
+    max-width: $inner;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.section-works__contents {
   
+  @include mq ('md'){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.section-works__image {
+  @include mq ('md'){
+    max-width: rem(557);
+    width: 100%;
+    margin-right: rem(32);
+  }
 }
 
 .section-works__content {
   padding: rem(24) rem(20) rem(21);
   color: $white;
+
+  @include mq ('md'){
+    max-width: rem(510);
+    width: 100%;
+  }
 }
 
 .section-header__title {
