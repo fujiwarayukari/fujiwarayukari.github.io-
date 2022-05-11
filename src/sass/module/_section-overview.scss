@@ -1,9 +1,9 @@
 @use "global" as *;
 
-.section-works {
+.section-overview {
   background-color: $black;
   @include mq ('md'){
-    background: linear-gradient(90deg, $black 0%, $black 30%, $background 30%, $background 100%);
+    background: linear-gradient(90deg, $background 0%, $background 70%, $black 70%, $black 100%);
   }
 }
 
@@ -11,7 +11,7 @@
   color:$white;
 }
 
-.section-works__inner {
+.section-overview__inner {
   @include mq ('md'){
     max-width: rem(1190);
     width: 100%;
@@ -20,16 +20,17 @@
   }
 }
 
-.section-works__contents {
+.section-overview__contents {
   
   @include mq ('md'){
     display:flex;
+    flex-direction:row-reverse;
     justify-content: center;
     align-items: center;
   }
 }
 
-.section-works__image {
+.section-overview__image {
   @include mq ('md'){
     max-width: rem(557);
     width: 100%;
@@ -37,7 +38,7 @@
   }
 }
 
-.section-works__content {
+.section-overview__content {
   padding: rem(24) rem(20) rem(21);
   color: $white;
 
@@ -47,6 +48,6 @@
   }
 }
 
-.section-works__btn {
+.section-overview__btn {
   margin-top: rem(16);
 }

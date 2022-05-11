@@ -775,13 +775,84 @@ header {
   }
 }
 
+.section-overview {
+  background-color: #111;
+}
+@media screen and (min-width: 768px) {
+  .section-overview {
+    background: -webkit-gradient(linear, left top, right top, from(#333), color-stop(70%, #333), color-stop(70%, #111), to(#111));
+    background: linear-gradient(90deg, #333 0%, #333 70%, #111 70%, #111 100%);
+  }
+}
+
+.section-title {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .section-overview__inner {
+    max-width: 74.375rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5rem 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-overview__contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-overview__image {
+    max-width: 34.8125rem;
+    width: 100%;
+    margin-right: 2rem;
+  }
+}
+
+.section-overview__content {
+  padding: 24px 20px 21px;
+  padding: 1.5rem 1.25rem 1.3125rem;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .section-overview__content {
+    max-width: 31.875rem;
+    width: 100%;
+  }
+}
+
+.section-overview__btn {
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+
 .section-title {
   color: #fff;
 }
 
 .section-works {
-  background: -webkit-gradient(linear, left top, right top, from(#111), color-stop(30%, #111), color-stop(30%, #333), to(#333));
-  background: linear-gradient(90deg, #111 0%, #111 30%, #333 30%, #333 100%);
+  background-color: #111;
+}
+@media screen and (min-width: 768px) {
+  .section-works {
+    background: -webkit-gradient(linear, left top, right top, from(#111), color-stop(30%, #111), color-stop(30%, #333), to(#333));
+    background: linear-gradient(90deg, #111 0%, #111 30%, #333 30%, #333 100%);
+  }
 }
 
 .section-title {
@@ -829,27 +900,6 @@ header {
     max-width: 31.875rem;
     width: 100%;
   }
-}
-
-.section-header__title {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.45;
-  font-weight: 400;
-  letter-spacing: 2px;
-  letter-spacing: 0.125rem;
-  text-align: center;
-}
-
-.section-header__text {
-  margin-top: 24px;
-  margin-top: 1.5rem;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.4375;
-  font-weight: 400;
-  letter-spacing: 2px;
-  letter-spacing: 0.125rem;
 }
 
 .section-works__btn {
