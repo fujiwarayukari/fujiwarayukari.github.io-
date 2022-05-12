@@ -201,7 +201,6 @@ select::-ms-expand {
     max-width: 22.5rem;
     margin: 0;
     margin: initial;
-    padding: 0.1875rem;
   }
 }
 
@@ -224,7 +223,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .btn a {
-    padding: 0.25rem 1.375rem;
+    padding: 0.3125rem 1.375rem;
     position: relative;
   }
 }
@@ -910,13 +909,70 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .section-news__btn {
+  .section-news__btn--pc {
     background-color: #fff;
     color: #000;
+    display: block;
     font-size: 1rem;
     font-weight: 500;
     border: none;
-    padding: 0.25rem 0;
+    text-align: center;
+    max-width: 8.4375rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-news__btn--pc span {
+    position: relative;
+    z-index: 3;
+    /*z-indexの数値をあげて文字を背景よりも手前に表示*/
+    color: #000;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-news__btn--pc:hover span {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-news__btn--pc a {
+    display: inline-block;
+    width: inherit;
+    padding: 0.25rem 1.25rem;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-news__btn--pc a::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+    background: #333;
+    -webkit-transform-origin: right top;
+            transform-origin: right top;
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-news__btn--pc a:hover::before {
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
   }
 }
 
