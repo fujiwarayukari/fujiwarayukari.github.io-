@@ -48,6 +48,10 @@ $contact-text: #979797;
 $contact-column: #FFDCDC;
 $contact-required: #FF5757;
 
+body {
+  background-color: $black;
+}
+
 
 ////////////////////
 // メディアクエリとブレークポイントの設定

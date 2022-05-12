@@ -40,6 +40,7 @@
 .section-works__content {
   padding: rem(24) rem(20) rem(21);
   color: $white;
+  background-color: $background;
 
   @include mq ('md'){
     max-width: rem(510);
