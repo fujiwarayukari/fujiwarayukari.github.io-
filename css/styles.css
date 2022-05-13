@@ -1153,10 +1153,15 @@ header {
   }
 }
 
-.section-title--english.english-title-overview {
-  max-width: 515px;
-  max-width: 32.1875rem;
+.english-title-overview {
+  max-width: 242px;
+  max-width: 15.125rem;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .english-title-overview {
+    max-width: 32.1875rem;
+  }
 }
 
 .section-overview__wrapper {
