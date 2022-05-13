@@ -1,5 +1,7 @@
 @use "global" as *;
 
+
+
 .section-works__wrapper {
   background-color: $black;
   @include mq ('md'){

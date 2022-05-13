@@ -850,10 +850,15 @@ header {
   margin-bottom: 500px;
 }
 
-.section-title--english.english-title-content {
-  max-width: 440px;
-  max-width: 27.5rem;
+.english-title-content {
+  max-width: 205px;
+  max-width: 12.8125rem;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .english-title-content {
+    max-width: 27.5rem;
+  }
 }
 
 .section-header__title {
@@ -1218,7 +1223,7 @@ header {
 }
 
 .section-title {
-  color: red;
+  color: #fff;
   width: 100%;
 }
 
