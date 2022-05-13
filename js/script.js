@@ -50,9 +50,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
 // swiper
-const swiper = new Swiper(".swiper", {});
-
-let swipeOption = {
+const swiper = new Swiper(".swiper", {
   loop: true,
   effect: 'fade',
   autoplay: {
@@ -60,8 +58,9 @@ let swipeOption = {
     disableOnInteraction: false,
   },
   speed: 2000,
-  
-}
+});
+
+
 
 // slickスライダー
 $(".slider").slick({
