@@ -1255,6 +1255,17 @@ header {
   padding: 0.625rem;
 }
 
+.english-title-works {
+  max-width: 161px;
+  max-width: 10.0625rem;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .english-title-works {
+    max-width: 21.75rem;
+  }
+}
+
 .section-works__wrapper {
   background-color: #111;
 }
