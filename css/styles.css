@@ -239,6 +239,7 @@ select::-ms-expand {
 }
 
 .blog-card {
+  color: #333;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,7 +258,7 @@ select::-ms-expand {
 }
 
 .blog-card__body {
-  color: #333;
+  color: inherit;
   padding: 4px 24px;
   padding: 0.25rem 1.5rem;
 }
@@ -298,6 +299,7 @@ select::-ms-expand {
   background-color: #FFEA2E;
   padding: 4px 5px;
   padding: 0.25rem 0.3125rem;
+  color: #000;
 }
 
 .btn {
@@ -828,11 +830,30 @@ header {
   }
 }
 
+.section-title--english.english-title-blog {
+  max-width: 242px;
+  max-width: 15.125rem;
+  width: 100%;
+}
+
 .section-blog__btn {
   margin-top: 48px;
   margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.section-title--english.english-title-contact {
+  max-width: 422px;
+  max-width: 26.375rem;
+  width: 100%;
+  margin-bottom: 500px;
+}
+
+.section-title--english.english-title-content {
+  max-width: 440px;
+  max-width: 27.5rem;
+  width: 100%;
 }
 
 .section-header__title {
@@ -1127,18 +1148,20 @@ header {
   }
 }
 
-.section-overview {
+.section-title--english.english-title-overview {
+  max-width: 515px;
+  max-width: 32.1875rem;
+  width: 100%;
+}
+
+.section-overview__wrapper {
   background-color: #111;
 }
 @media screen and (min-width: 768px) {
-  .section-overview {
+  .section-overview__wrapper {
     background: -webkit-gradient(linear, left top, right top, from(#333), color-stop(70%, #333), color-stop(70%, #111), to(#111));
     background: linear-gradient(90deg, #333 0%, #333 70%, #111 70%, #111 100%);
   }
-}
-
-.section-title {
-  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -1196,20 +1219,48 @@ header {
 
 .section-title {
   color: #fff;
+  width: 100%;
 }
 
-.section-works {
+.section-title__header {
+  width: inherit;
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  letter-spacing: 0.03125rem;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  padding: 0.625rem;
+}
+
+.section-title--english {
+  max-width: 348px;
+  max-width: 21.75rem;
+  width: 100%;
+}
+
+.section-title--en {
+  font-family: "'Roboto Slab', serif";
+  font-size: 110px;
+  font-size: 6.875rem;
+  line-height: 1.4363636364;
+  font-weight: 400;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  color: #F9F871;
+  opacity: 0.2;
+}
+
+.section-works__wrapper {
   background-color: #111;
 }
 @media screen and (min-width: 768px) {
-  .section-works {
+  .section-works__wrapper {
     background: -webkit-gradient(linear, left top, right top, from(#111), color-stop(30%, #111), color-stop(30%, #333), to(#333));
     background: linear-gradient(90deg, #111 0%, #111 30%, #333 30%, #333 100%);
   }
-}
-
-.section-title {
-  color: #fff;
 }
 
 @media screen and (min-width: 768px) {

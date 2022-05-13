@@ -1,14 +1,10 @@
 @use "global" as *;
 
-.section-works {
+.section-works__wrapper {
   background-color: $black;
   @include mq ('md'){
     background: linear-gradient(90deg, $black 0%, $black 30%, $background 30%, $background 100%);
   }
-}
-
-.section-title {
-  color:$white;
 }
 
 .section-works__inner {

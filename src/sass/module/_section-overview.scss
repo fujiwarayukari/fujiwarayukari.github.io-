@@ -1,14 +1,15 @@
 @use "global" as *;
 
-.section-overview {
+.section-title--english.english-title-overview {
+  max-width: rem(515);
+  width: 100%;
+}
+
+.section-overview__wrapper {
   background-color: $black;
   @include mq ('md'){
     background: linear-gradient(90deg, $background 0%, $background 70%, $black 70%, $black 100%);
   }
-}
-
-.section-title {
-  color:$white;
 }
 
 .section-overview__inner {
