@@ -22,11 +22,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./js/script.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -67,6 +70,34 @@
 
   </header>
   <main>
+
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slide-img">
+            <img src="./images/common/MVslider.jpg" alt="">
+            <p class="swiper-caption__title swiper-caption__title--main">メインタイトルが入ります</P>
+            <p class="swiper-caption__title swiper-caption__title--sub">サブタイトルが入ります</P>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-img">
+            <img src="./images/common/MVslider-1.jpg" alt="">
+            <p class="swiper-caption__title swiper-caption__title--main">メインタイトルが入ります</P>
+            <p class="swiper-caption__title swiper-caption__title--sub">サブタイトルが入ります</P>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-img">
+            <img src="./images/common/MVslider-２.jpg" alt="">
+            <p class="swiper-caption__title swiper-caption__title--main">メインタイトルが入ります</P>
+            <p class="swiper-caption__title swiper-caption__title--sub">サブタイトルが入ります</P>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="section-news">
       <div class="section-news__inner">
         <div class="section-news__content">
@@ -81,7 +112,7 @@
           <div class="section-news__button">
             <div class="section-news__btn--pc btn"><a href="#"><span>すべて見る</span></a></div>
           </div>
-        
+
         </div>
       </div>
     </section>
@@ -93,6 +124,27 @@
       <div class="section-works__title section-title">
         <h2 class="section-title__header">制作実績</h2>
       </div>
+
+<!-- swiper -->
+<div class="container">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./images/common/works-1.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/common/works-2.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/common/works-3.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- ページネーション -->
+  <div class="swiper-pagination"></div>
+</div>
+
+
       <div class="section-works__inner">
         <div class="section-works__contents">
           <div class="section-works__image">
@@ -189,7 +241,7 @@
               <span class="blog-card__category">カテゴリ</span>
               <time class="blog-card__date" datetime="2021-07-20">2021.07.20</time>
             </div>
-          </a>          
+          </a>
           <a href="#" class="blog-card-list__item blog-card">
             <figure class="blog-card__image">
               <img src="./images/common/blogcard3.jpg" alt="ブログカード">
@@ -204,7 +256,7 @@
               <span class="blog-card__category">カテゴリ</span>
               <time class="blog-card__date" datetime="2021-07-20">2021.07.20</time>
             </div>
-          </a>   
+          </a>
           <a href="#" class="blog-card-list__item blog-card">
             <figure class="blog-card__image">
               <img src="./images/common/blogcard1.jpg" alt="ブログカード">
@@ -219,7 +271,7 @@
               <span class="blog-card__category">カテゴリ</span>
               <time class="blog-card__date" datetime="2021-07-20">2021.07.20</time>
             </div>
-          </a>       
+          </a>
         </div>
         <div class="section-blog__btn btn">
           <a href="#"><span>詳しく見る</span></a>

@@ -177,6 +177,125 @@ select::-ms-expand {
   display: none;
 }
 
+.blog-card-list {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .blog-card-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.blog-card-list::before {
+  position: absolute;
+  content: "New";
+  top: 0;
+  left: 0;
+  background-color: #FFBA6A;
+  width: 60px;
+  width: 3.75rem;
+  height: 60px;
+  height: 3.75rem;
+  border-radius: 50%;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 400;
+  line-height: 2.1875;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blog-card-list__item {
+  max-width: calc(33.3333% - 1.04167rem);
+  width: 100%;
+}
+
+.blog-card-list__item:not(:nth-child(3n)) {
+  margin-right: 25px;
+  margin-right: 1.5625rem;
+}
+
+.blog-card-list__item:nth-child(n+4) {
+  margin-top: 25px;
+  margin-top: 1.5625rem;
+}
+
+.blog-card {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.blog-card:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+.blog-card__body {
+  color: #333;
+  padding: 4px 24px;
+  padding: 0.25rem 1.5rem;
+}
+
+.blog-card__title {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.9444444444;
+  text-align: center;
+  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
+}
+
+.blog-card__text,
+.blog-card__information {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.8571428571;
+  padding-top: 4px;
+  padding-top: 0.25rem;
+}
+
+.blog-card__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: auto;
+  padding: 4px 24px 16px;
+  padding: 0.25rem 1.5rem 1rem;
+}
+
+.blog-card__category {
+  background-color: #FFEA2E;
+  padding: 4px 5px;
+  padding: 0.25rem 0.3125rem;
+}
+
 .btn {
   background-color: #333;
   color: #fff;
@@ -485,6 +604,7 @@ header {
   height: 50px;
   height: 3.125rem;
   width: 100vw;
+  z-index: 9999;
 }
 
 .header__inner {
@@ -798,8 +918,79 @@ header {
   letter-spacing: 0.125rem;
 }
 
+.slide-img img {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+@-webkit-keyframes zoomUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
+
+@keyframes zoomUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
+.swiper-slide-active .slide-img,
+.swiper-slide-duplicate-active .slide-img,
+.swiper-slide-prev .slide-img {
+  -webkit-animation: zoomUp 10s linear 0s 1 normal both;
+          animation: zoomUp 10s linear 0s 1 normal both;
+}
+
+.slide-img {
+  position: relative;
+}
+
+.swiper-caption__title--main {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 50px;
+  font-size: 3.125rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  letter-spacing: 0.03125rem;
+  width: 100%;
+  text-align: center;
+}
+
+.swiper-caption__title--sub {
+  color: #fff;
+  position: absolute;
+  top: calc(50% + 5rem);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 25px;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  letter-spacing: 0.03125rem;
+  width: 100%;
+  text-align: center;
+}
+
 .section-news {
-  margin-top: 300px;
+  margin-top: 16px;
+  margin-top: 1rem;
   background-color: #111;
 }
 

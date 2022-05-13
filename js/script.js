@@ -48,4 +48,23 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
+
+// swiper
+const swiper = new Swiper(".swiper", {});
+
+
+let swipeOption = {
+  loop: true,
+  effect: 'fade',
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  speed: 2000,
+}
+
+
+
+
+
 });

@@ -8,6 +8,7 @@ header {
   background-color: $black;
   height: rem(50);
   width: 100vw;
+  z-index: 9999;
 }
 
 .header__inner {
