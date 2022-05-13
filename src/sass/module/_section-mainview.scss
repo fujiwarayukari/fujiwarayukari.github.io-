@@ -1,6 +1,11 @@
 @use "global" as *;
 
-.slide-img img{  
+.u-desktop img{  
+  height: auto;
+  width: 100%;
+  display: block;
+}
+.u-mobile img{  
   height: auto;
   width: 100%;
   display: block;
@@ -26,17 +31,26 @@
   position: relative;
 }
 
+.swiper-caption__title {
+  display: block;
+  padding: 0 rem(16);
+}
+
 .swiper-caption__title--main {
   color: $white;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: rem(50);
+  font-size: rem(28);
   font-weight: $bold;
   line-height: 1;
   letter-spacing: rem(0.5);
   width: 100%;
   text-align: center;
+
+  @include mq ('md'){
+    font-size: rem(50);
+  }
 }
 
 .swiper-caption__title--sub {
@@ -44,10 +58,14 @@
   position: absolute;
   top: calc(50% + rem(80));
   transform: translateY(-50%);
-  font-size: rem(25);
+  font-size: rem(20);
   font-weight: $bold;
   line-height: 1;
   letter-spacing: rem(0.5);
   width: 100%;
   text-align: center;
+  
+  @include mq ('md'){
+    font-size: rem(25);    
+  }
 }
