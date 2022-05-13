@@ -830,10 +830,15 @@ header {
   }
 }
 
-.section-title--english.english-title-blog {
-  max-width: 242px;
-  max-width: 15.125rem;
+.english-title-blog {
+  max-width: 114px;
+  max-width: 7.125rem;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .english-title-blog {
+    max-width: 15.125rem;
+  }
 }
 
 .section-blog__btn {
@@ -1243,24 +1248,6 @@ header {
   display: block;
   padding: 10px;
   padding: 0.625rem;
-}
-
-.section-title--english {
-  max-width: 348px;
-  max-width: 21.75rem;
-  width: 100%;
-}
-
-.section-title--en {
-  font-family: "'Roboto Slab', serif";
-  font-size: 110px;
-  font-size: 6.875rem;
-  line-height: 1.4363636364;
-  font-weight: 400;
-  letter-spacing: 2px;
-  letter-spacing: 0.125rem;
-  color: #F9F871;
-  opacity: 0.2;
 }
 
 .section-works__wrapper {

@@ -15,17 +15,8 @@
   padding: rem(10);
 }
 
-.section-title--english {
-  max-width: rem(348);
-  width: 100%;
-}
+// .section-title--english {
+//   max-width: rem(348);
+//   width: 100%;
+// }
 
-.section-title--en {
-  font-family: $base-font-family-english;
-  font-size: rem(110);
-  line-height: calc(158 / 110);
-  font-weight: $normal;
-  letter-spacing: rem(2);
-  color: $accent-color;
-  opacity: 0.2;
-}
