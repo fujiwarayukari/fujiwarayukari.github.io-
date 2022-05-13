@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.js-scroll-top {
+  transition: opacity 1s;
+  visibility: hidden;
+  opacity: 0;
+}
+//jsでis-fadeinクラスつけて出現させるお
+ .js-scroll-top.is-fadein {
+    visibility: visible;
+    opacity: 1;
+  }
+// 矢印
+.arrow{
+  position: fixed;
+  right: rem(32);
+  bottom: rem(32);
+  color: $background;
+  cursor: pointer;
+  background-color: $white;
+  padding: rem(27);
+  transition: all 0.2s ease-in-out;
+  
+}
+.arrow:hover{
+  background-color: $background;
+  color: $white;
+}
+.arrow::before {
+    content: "";
+    position:absolute;
+    width: rem(18);
+    height: rem(18);
+    border-top: solid 3px $background;
+    border-right: solid 3px $background;
+    transform:translate(-50% , -50%) rotate(-45deg);
+    position:  absolute;
+    left: 50%;
+    top:50%;
+  }
+
+  .arrow:hover:before{
+    border-top: solid 3px #fff;
+    border-right: solid 3px #fff;
+  }

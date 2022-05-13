@@ -73,4 +73,25 @@ $(".slider").slick({
 });
 
 
+// トップへ戻るボタン
+var page_top = $('#js-scroll-top')
+  $(window).scroll(function () {
+    //どれくらいスクロールしたら出現させるか
+    if ($(this).scrollTop() > 450) {
+      page_top.addClass('is-fadein')
+    } else {
+      page_top.removeClass('is-fadein')
+    }
+  })
+  page_top.on('click', function () {
+    $('body,html').animate(
+      {
+        scrollTop: 0,
+      },
+      500
+    )
+    return false
+  })
+
+
 });

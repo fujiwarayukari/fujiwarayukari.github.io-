@@ -659,6 +659,59 @@ header {
   }
 }
 
+.js-scroll-top {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.js-scroll-top.is-fadein {
+  visibility: visible;
+  opacity: 1;
+}
+
+.arrow {
+  position: fixed;
+  right: 32px;
+  right: 2rem;
+  bottom: 32px;
+  bottom: 2rem;
+  color: #333;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 27px;
+  padding: 1.6875rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.arrow:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.arrow::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  width: 1.125rem;
+  height: 18px;
+  height: 1.125rem;
+  border-top: solid 3px #333;
+  border-right: solid 3px #333;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.arrow:hover:before {
+  border-top: solid 3px #fff;
+  border-right: solid 3px #fff;
+}
+
 .pc-nav {
   display: none;
 }
