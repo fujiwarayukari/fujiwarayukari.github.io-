@@ -848,11 +848,16 @@ header {
   margin-right: auto;
 }
 
-.section-title--english.english-title-contact {
-  max-width: 422px;
-  max-width: 26.375rem;
+.english-title-contact {
+  max-width: 130px;
+  max-width: 8.125rem;
   width: 100%;
   margin-bottom: 500px;
+}
+@media screen and (min-width: 768px) {
+  .english-title-contact {
+    max-width: 26.375rem;
+  }
 }
 
 .english-title-content {

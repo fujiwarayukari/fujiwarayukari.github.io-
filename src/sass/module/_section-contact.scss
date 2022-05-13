@@ -1,7 +1,10 @@
 @use "global" as *;
 
-.section-title--english.english-title-contact{
-  max-width: rem(422);
+.english-title-contact{
+  max-width: rem(130);
   width: 100%;
+  @include mq ('md'){
+    max-width: rem(422);
+  }
   margin-bottom: 500px;
 }
