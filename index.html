@@ -27,8 +27,11 @@
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
   <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script defer src="./js/script.js"></script>
+  <!-- <script defer src="./js/script.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
@@ -139,29 +142,15 @@
       <div class="section-works__title section-title">
         <h2 class="section-title__header">制作実績</h2>
       </div>
-
-      <!-- swiper -->
-      <div class="section-works__swiper swiper-container">
-        <div class="swiper swiper-works">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./images/common/works-1.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/common/works-2.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/common/works-3.jpg" alt="">
-            </div>
-          </div>
-          <!-- ページネーション -->
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
       <div class="section-works__inner">
         <div class="section-works__contents">
           <div class="section-works__image">
-
+            <!-- slickスライダー -->
+            <div class="slider">
+              <div><img src="./images/common/works-1.jpg" alt="制作実績" /></div>
+              <div><img src="./images/common/works-2.jpg" alt="制作実績" /></div>
+              <div><img src="./images/common/works-3.jpg" alt="制作実績" /></div>
+            </div>
           </div>
           <div class="section-works__content">
             <div class="section-works__title section-header">
@@ -319,6 +308,10 @@
       </div>
     </div>
   </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+  </script>
+  <script defer src="./js/script.js"></script>
 </body>
 
 </html>
