@@ -820,7 +820,6 @@ header {
   background-color: #111;
   padding: 48px 20px 120px;
   padding: 3rem 1.25rem 7.5rem;
-  margin: 400px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -849,15 +848,50 @@ header {
   margin-right: auto;
 }
 
+.section-contact {
+  margin-bottom: 400px;
+}
+
 .english-title-contact {
   max-width: 130px;
   max-width: 8.125rem;
   width: 100%;
-  margin-bottom: 500px;
 }
 @media screen and (min-width: 768px) {
   .english-title-contact {
     max-width: 26.375rem;
+  }
+}
+
+.section-contact__inner {
+  padding: 20px;
+  padding: 1.25rem;
+}
+
+.section-contact__text {
+  color: #fff;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.4375;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .section-contact__text {
+    text-align: center;
+  }
+}
+
+.section-contact__btn {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .section-contact__btn {
+    margin-top: 3.75rem;
   }
 }
 
