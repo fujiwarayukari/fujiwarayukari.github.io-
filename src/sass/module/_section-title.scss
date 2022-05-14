@@ -3,6 +3,7 @@
 .section-title {
   color:$white;
   width: 100%;
+  position: relative;
 }
 
 .section-title__header {
@@ -15,8 +16,10 @@
   padding: rem(10);
 }
 
-// .section-title--english {
-//   max-width: rem(348);
-//   width: 100%;
-// }
+.section-title--english {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+}
 
