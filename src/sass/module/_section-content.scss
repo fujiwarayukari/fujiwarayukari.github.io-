@@ -8,13 +8,18 @@
   }
 }
 
+.content-item {
+  display: flex;
+  flex-wrap: wrap;
+}
 .content-item__image {
   position: relative;
-  display: inline-block;
-  max-width: rem(188);
+  display: block;
+  max-width: 50%;
   width: 100%;
   @include mq ('md'){
-    max-width: rem(320);
+    max-width: 25%;
+    width: 100%;
   }
 }
 
@@ -32,5 +37,22 @@
 
 .content-item__image:hover::before{
   opacity: 0.6;
+}
+
+.content-item__text {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: $white;
+
+  @include mq ('md'){
+    width:100%;
+    text-align: center;
+    font-size: rem(25);
+    line-height: calc(54 / 25);
+    letter-spacing: rem(2);
+    font-weight: $normal;
+  }
 }
 
