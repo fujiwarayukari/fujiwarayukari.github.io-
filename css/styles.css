@@ -471,6 +471,7 @@ footer {
 @media screen and (min-width: 768px) {
   .footer__nav {
     height: inherit;
+    margin-top: 0;
   }
 }
 
@@ -868,6 +869,18 @@ header {
 @media screen and (min-width: 768px) {
   .english-title-content {
     max-width: 27.5rem;
+  }
+}
+
+.content-item__image {
+  display: inline-block;
+  max-width: 188px;
+  max-width: 11.75rem;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .content-item__image {
+    max-width: 20rem;
   }
 }
 
@@ -1418,5 +1431,9 @@ header {
   width: 100%;
   cursor: pointer;
   font-weight: 400;
+}
+
+* {
+  outline: 2px solid blue;
 }
 /*# sourceMappingURL=styles.css.map */

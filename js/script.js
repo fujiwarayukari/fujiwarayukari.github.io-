@@ -66,9 +66,9 @@ const swiper = new Swiper(".swiper", {
 $(".slider").slick({
   arrows: false, //矢印消す
   autoplay: true,  //自動再生
-  autoplaySpeed: 3000,
+  autoplaySpeed: 2000,
   dots: true,  //ページネーション表示
-  dotsClass: "slide-dots" //class名を変更する(デフォルトのスタイル解除)（デフォルトはslick-dots）
+  dotsClass: "slide-dots", //class名を変更する(デフォルトのスタイル解除)（デフォルトはslick-dots）
 });
 
 

@@ -3,3 +3,6 @@
 @use "./module/**";
 @use "./page/**";
 
+* {
+  outline: 2px solid blue;
+}

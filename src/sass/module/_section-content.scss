@@ -8,3 +8,16 @@
   }
 }
 
+.content-item__image {
+  display: inline-block;
+  max-width: rem(188);
+  width: 100%;
+  @include mq ('md'){
+    max-width: rem(320);
+  }
+}
+
+.content-item__image:hover{
+
+}
+

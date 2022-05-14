@@ -55,6 +55,7 @@ footer {
   margin-top: rem(8);
   @include mq ('md'){
     height: inherit;
+    margin-top: 0;
   }
 }
 
