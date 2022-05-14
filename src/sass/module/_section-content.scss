@@ -9,6 +9,7 @@
 }
 
 .content-item__image {
+  position: relative;
   display: inline-block;
   max-width: rem(188);
   width: 100%;
@@ -17,7 +18,19 @@
   }
 }
 
-.content-item__image:hover{
+.content-item__image::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $white;
+  width: 100%;
+  opacity: 0;
+}
 
+.content-item__image:hover::before{
+  opacity: 0.6;
 }
 

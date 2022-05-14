@@ -873,6 +873,7 @@ header {
 }
 
 .content-item__image {
+  position: relative;
   display: inline-block;
   max-width: 188px;
   max-width: 11.75rem;
@@ -882,6 +883,22 @@ header {
   .content-item__image {
     max-width: 20rem;
   }
+}
+
+.content-item__image::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  width: 100%;
+  opacity: 0;
+}
+
+.content-item__image:hover::before {
+  opacity: 0.6;
 }
 
 .section-header__title {
