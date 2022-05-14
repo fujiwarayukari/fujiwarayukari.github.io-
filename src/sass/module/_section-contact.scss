@@ -1,6 +1,7 @@
 @use "global" as *;
 .section-contact {
   background-color: $background;
+  padding-top: rem(44);
   padding-bottom: rem(44);
 
   @include mq ('md'){

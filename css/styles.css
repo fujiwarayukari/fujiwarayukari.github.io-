@@ -814,8 +814,8 @@ header {
 
 .section-blog {
   background-color: #111;
-  padding: 48px 20px 120px;
-  padding: 3rem 1.25rem 7.5rem;
+  padding: 60px 20px 120px;
+  padding: 3.75rem 1.25rem 7.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -846,6 +846,8 @@ header {
 
 .section-contact {
   background-color: #333;
+  padding-top: 44px;
+  padding-top: 2.75rem;
   padding-bottom: 44px;
   padding-bottom: 2.75rem;
 }
@@ -896,6 +898,11 @@ header {
   .section-contact__btn {
     margin-top: 3.75rem;
   }
+}
+
+.section-content {
+  padding-top: 60px;
+  padding-top: 3.75rem;
 }
 
 .english-title-content {
@@ -1265,6 +1272,11 @@ header {
   }
 }
 
+.section-overview {
+  padding-top: 70px;
+  padding-top: 4.375rem;
+}
+
 .english-title-overview {
   max-width: 242px;
   max-width: 15.125rem;
@@ -1360,10 +1372,15 @@ header {
 
 .section-title--english {
   position: absolute;
-  top: -50%;
+  top: -30%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.section-works {
+  padding-top: 60px;
+  padding-top: 3.75rem;
 }
 
 .english-title-works {
@@ -1529,9 +1546,5 @@ header {
   width: 100%;
   cursor: pointer;
   font-weight: 400;
-}
-
-* {
-  outline: 2px solid blue;
 }
 /*# sourceMappingURL=styles.css.map */

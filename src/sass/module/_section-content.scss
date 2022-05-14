@@ -1,5 +1,9 @@
 @use "global" as *;
 
+.section-content {
+  padding-top: rem(60);
+}
+
 .english-title-content {
   max-width: rem(205);
   width: 100%;
