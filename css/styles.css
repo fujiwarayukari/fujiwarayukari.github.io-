@@ -399,10 +399,6 @@ select::-ms-expand {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background-color: #111;
   height: 372px;
   height: 23.25rem;
@@ -849,7 +845,14 @@ header {
 }
 
 .section-contact {
-  margin-bottom: 400px;
+  background-color: #333;
+  padding-bottom: 44px;
+  padding-bottom: 2.75rem;
+}
+@media screen and (min-width: 768px) {
+  .section-contact {
+    padding-bottom: 8.125rem;
+  }
 }
 
 .english-title-contact {
