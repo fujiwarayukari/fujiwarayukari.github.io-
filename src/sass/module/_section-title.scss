@@ -37,10 +37,10 @@
   }
 }
 
-.section-title__english--right {
+.section-title__english--right--works {
   @include mq ('md'){
     top: 15%;
-    left: 65%;
+    left: 67%;
     transform: translateX(0%);
   }
 }

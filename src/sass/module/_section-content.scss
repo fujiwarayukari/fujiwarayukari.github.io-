@@ -2,6 +2,27 @@
 
 .section-content {
   padding-top: rem(60);
+  position: relative;
+
+  @include mq ('md'){
+    padding-top: rem(150);
+  }
+}
+
+.section-content::before {
+  position: absolute;
+  content:'';
+  width: calc(355 / 375)* 100%;
+  height: rem(700);
+  top: 45px;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(to right top, transparent 50%, $accent-color 50%, $accent-color calc(50% + 2px), transparent calc(50% + 2px));
+
+  @include mq ('md'){
+    width: calc(1212 / 1280)* 100%;
+    height: rem(1212);
+  }
 }
 
 .english-title-content {
@@ -13,7 +34,7 @@
 }
 
 .section-content__items {
-  margin-top: rem(48);
+  margin-top: rem(38);
 }
 
 .content-item {

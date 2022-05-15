@@ -1,7 +1,30 @@
 @use "global" as *;
 
 .section-overview {
-  padding-top: rem(70);
+  padding-top: rem(120);
+  padding-bottom: rem(100);
+  position: relative;
+
+  @include mq ('md'){
+    padding-top: rem(150);
+    padding-bottom: rem(150);
+  }
+}
+
+.section-overview::before {
+  position: absolute;
+  content:'';
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: calc(355 / 375)* 100%;
+  height: rem(1145);
+  background-image: linear-gradient(to left top, transparent 50%, $accent-color 50%, $accent-color calc(50% + 2px), transparent calc(50% + 2px));
+
+  @include mq ('md'){
+    width: calc(1212 / 1280)* 100%;
+    height: rem(1212);
+  }
 }
 
 .english-title-overview {
@@ -16,6 +39,15 @@
   background-color: $black;
   @include mq ('md'){
     background: linear-gradient(90deg, $background 0%, $background 70%, $black 70%, $black 100%);
+  
+  }
+}
+
+.overview-mt {
+
+  @include mq ('md'){
+
+  margin-top: rem(38);
   }
 }
 

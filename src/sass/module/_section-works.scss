@@ -1,7 +1,11 @@
 @use "global" as *;
 
+
 .section-works {
-  padding-top: rem(60);
+  padding-top: rem(110);
+  @include mq ('md'){
+    padding-top: rem(140);
+  }  
 }
 
 .english-title-works{
@@ -14,8 +18,10 @@
 
 .section-works__wrapper {
   background-color: $black;
+  margin-top: rem(38);
   @include mq ('md'){
     background: linear-gradient(90deg, $black 0%, $black 30%, $background 30%, $background 100%);
+
   }
 }
 
