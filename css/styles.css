@@ -863,6 +863,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-contact {
+    padding-top: 9.25rem;
     padding-bottom: 8.125rem;
   }
 }
@@ -1025,14 +1026,17 @@ header {
 }
 
 .section-header__text {
-  margin-top: 24px;
-  margin-top: 1.5rem;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.4375;
   font-weight: 400;
   letter-spacing: 2px;
   letter-spacing: 0.125rem;
+}
+@media screen and (min-width: 768px) {
+  .section-header__text {
+    padding: 3rem 0;
+  }
 }
 
 .u-desktop img {
@@ -1408,9 +1412,8 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-overview__content {
-    padding: 0;
-    margin-right: 1.25rem;
-    max-width: 31.875rem;
+    padding: 0 2rem;
+    max-width: 35.875rem;
     width: 100%;
   }
 }
@@ -1459,6 +1462,7 @@ header {
     left: 0;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+    padding-left: 1.5625rem;
   }
 }
 
@@ -1468,6 +1472,7 @@ header {
     left: 67%;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+    padding-right: 1.5625rem;
   }
 }
 
@@ -1477,6 +1482,17 @@ header {
     left: 77%;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+    padding-right: 1.5625rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-title__english--left--contact {
+    top: 0;
+    left: 0;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    padding-left: 1.5625rem;
   }
 }
 
@@ -1540,7 +1556,6 @@ header {
   .section-works__image {
     max-width: 34.8125rem;
     width: 100%;
-    margin-right: 2rem;
   }
 }
 
@@ -1552,8 +1567,8 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-works__content {
-    padding: 0;
-    max-width: 31.875rem;
+    padding: 0 2rem;
+    max-width: 35.875rem;
     width: 100%;
   }
 }

@@ -9,10 +9,12 @@
 }
 
 .section-header__text {
-  margin-top: rem(24);
   font-size: rem(16);
   line-height: calc(23 / 16);
   font-weight: $normal;
   letter-spacing: rem(2);
+  
+  @include mq ('md'){
+    padding: rem(48) 0;
+  }
 }
-

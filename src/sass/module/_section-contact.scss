@@ -5,6 +5,7 @@
   padding-bottom: rem(44);
 
   @include mq ('md'){
+    padding-top: rem(148);
     padding-bottom: rem(130);
   }
 }
