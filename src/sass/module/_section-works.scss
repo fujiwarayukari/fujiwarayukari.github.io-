@@ -51,6 +51,7 @@
   background-color: $background;
 
   @include mq ('md'){
+    padding: 0;
     max-width: rem(510);
     width: 100%;
   }

@@ -1,5 +1,12 @@
 @use "global" as *;
 
+.section-blog__items {
+  margin-top: rem(64);
+  @include mq ('md'){
+    margin-top: rem(48);
+  }
+}
+
 .section-blog {
   background-color: $black;
   padding: rem(60) rem(20) rem(120);

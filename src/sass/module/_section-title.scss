@@ -3,7 +3,11 @@
 .section-title {
   color:$white;
   width: 100%;
+  margin: 0 auto;
   position: relative;
+  @include mq ('md'){
+    max-width: $inner;
+  }
 }
 
 .section-title__header {
@@ -14,14 +18,40 @@
   text-align: center;
   display: block;
   padding: rem(10);
+
 }
 
-.section-title--english {
+.section-title__english {
   position: absolute;
   top: -30%;
   left: 50%;
   transform: translateX(-50%);
-  
 
 }
+
+.section-title__english--left {
+  @include mq ('md'){
+    top: 15%;
+    left: 0;
+    transform: translateX(0%);
+  }
+}
+
+.section-title__english--right {
+  @include mq ('md'){
+    top: 15%;
+    left: 65%;
+    transform: translateX(0%);
+  }
+}
+
+.section-title__english--right--blog {
+  @include mq ('md'){
+    top: 15%;
+    left: 77%;
+    transform: translateX(0%);
+  }
+}
+
+
 
