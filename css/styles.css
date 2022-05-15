@@ -930,7 +930,7 @@ header {
   top: 45px;
   left: 0;
   z-index: -1;
-  background-image: linear-gradient(to right top, transparent 50%, #F9F871 50%, #F9F871 calc(50% + 2px), transparent calc(50% + 2px));
+  background-image: linear-gradient(to right top, transparent 49.9%, #F9F871 50%, #F9F871 calc(50.1% + 1px), transparent calc(50.2% + 1px));
 }
 @media screen and (min-width: 768px) {
   .section-content::before {
@@ -1329,7 +1329,7 @@ header {
   width: 94.6666666667%;
   height: 1145px;
   height: 71.5625rem;
-  background-image: linear-gradient(to left top, transparent 50%, #F9F871 50%, #F9F871 calc(50% + 2px), transparent calc(50% + 2px));
+  background-image: linear-gradient(to left top, transparent 49.9%, #F9F871 50%, #F9F871 calc(50.1% + 1px), transparent calc(50.2% + 1px));
 }
 @media screen and (min-width: 768px) {
   .section-overview::before {
