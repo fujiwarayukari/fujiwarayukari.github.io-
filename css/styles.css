@@ -869,8 +869,8 @@ header {
 }
 
 .english-title-contact {
-  max-width: 130px;
-  max-width: 8.125rem;
+  max-width: 201px;
+  max-width: 12.5625rem;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -1488,7 +1488,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .section-title__english--left--contact {
-    top: 0;
+    top: 45%;
     left: 0;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
