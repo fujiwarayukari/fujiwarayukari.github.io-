@@ -621,8 +621,8 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: inherit;
-  padding: 0 16px 0 23px;
-  padding: 0 1rem 0 1.4375rem;
+  padding: 0 16px 8px 23px;
+  padding: 0 1rem 0.5rem 1.4375rem;
 }
 @media screen and (min-width: 768px) {
   .header__inner {
@@ -632,6 +632,8 @@ header {
 }
 
 .header__logo {
+  padding-top: 10px;
+  padding-top: 0.625rem;
   width: 70px;
   width: 4.375rem;
   position: relative;
@@ -1092,7 +1094,7 @@ header {
 .swiper-caption__title--main {
   color: #fff;
   position: absolute;
-  top: 50%;
+  top: 47%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   font-size: 28px;
@@ -1113,9 +1115,7 @@ header {
 .swiper-caption__title--sub {
   color: #fff;
   position: absolute;
-  top: calc(50% + 5rem);
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 52%;
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 700;

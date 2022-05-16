@@ -49,7 +49,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
 
-// swiper
+// メインビューswiper
 const swiper = new Swiper(".swiper", {
   loop: true,
   effect: 'fade',

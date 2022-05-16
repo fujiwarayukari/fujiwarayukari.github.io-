@@ -16,7 +16,7 @@ header {
   align-items: center;
   justify-content: space-between;
   height: inherit;
-  padding: 0 rem(16) 0 rem(23);
+  padding: 0 rem(16) rem(8) rem(23);
 
   @include mq ('md'){
     padding-left: rem(32);
@@ -25,6 +25,7 @@ header {
 }
 
 .header__logo {
+  padding-top: rem(10);
   width: rem(70);
   position: relative;
   z-index: 9999;
