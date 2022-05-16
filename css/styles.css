@@ -222,8 +222,12 @@ select::-ms-expand {
           justify-content: center;
 }
 
+.blog-card-list__item:not(:last-child) {
+  margin-bottom: 23px;
+  margin-bottom: 1.4375rem;
+}
 @media screen and (min-width: 768px) {
-  .blog-card-list__item {
+  .blog-card-list__item:not(:last-child) {
     max-width: calc(33.3333% - 1.04167rem);
     width: 100%;
   }
@@ -874,8 +878,8 @@ header {
 }
 
 .section-blog__btn {
-  margin-top: 48px;
-  margin-top: 3rem;
+  margin-top: 22px;
+  margin-top: 1.375rem;
   margin-left: auto;
   margin-right: auto;
 }

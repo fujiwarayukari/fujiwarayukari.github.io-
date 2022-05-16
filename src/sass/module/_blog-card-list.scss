@@ -29,7 +29,8 @@
   justify-content: center;
 }
 
-.blog-card-list__item {
+.blog-card-list__item:not(:last-child) {
+  margin-bottom: rem(23);
   @include mq ('md'){
     max-width: calc(33.3333% - rem(25)*2 / 3);
     width: 100%;
