@@ -2,7 +2,6 @@
 
 footer {
   background-color: $black;
-  height: rem(372);
   width: 100vw;
 
   @include mq ('md'){
@@ -11,7 +10,6 @@ footer {
 }
 
 .footer__inner {
-  height: inherit;
   padding: rem(48) 0;
   text-align: center;
   

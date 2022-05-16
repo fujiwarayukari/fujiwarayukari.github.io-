@@ -1,7 +1,7 @@
 @use "global" as *;
 .section-contact {
   background-color: $background;
-  padding-top: rem(44);
+  padding-top: rem(60);
   padding-bottom: rem(44);
 
   @include mq ('md'){
@@ -19,7 +19,7 @@
 }
 
 .section-contact__inner{
-  padding: rem(20);
+  padding: rem(9) rem(20) rem(20);
 }
 
 .section-contact__text {
@@ -35,7 +35,7 @@
 }
 
 .section-contact__btn{
-  margin-top: rem(40);
+  margin-top: rem(45);
   margin-left: auto;
   margin-right: auto;
   @include mq ('md'){

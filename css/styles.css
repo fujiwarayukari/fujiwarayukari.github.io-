@@ -416,8 +416,8 @@ select::-ms-expand {
   text-align: center;
   font-size: 11px;
   font-size: 0.6875rem;
-  letter-spacing: 1.2px;
-  letter-spacing: 0.075rem;
+  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 }
 @media screen and (min-width: 768px) {
   .copyright {
@@ -428,8 +428,6 @@ select::-ms-expand {
 
 footer {
   background-color: #111;
-  height: 372px;
-  height: 23.25rem;
   width: 100vw;
 }
 @media screen and (min-width: 768px) {
@@ -439,7 +437,6 @@ footer {
 }
 
 .footer__inner {
-  height: inherit;
   padding: 48px 0;
   padding: 3rem 0;
   text-align: center;
@@ -702,15 +699,15 @@ header {
 
 .arrow {
   position: fixed;
-  right: 32px;
-  right: 2rem;
-  bottom: 32px;
-  bottom: 2rem;
+  right: 22px;
+  right: 1.375rem;
+  bottom: 35px;
+  bottom: 2.1875rem;
   color: #333;
   cursor: pointer;
   background-color: #fff;
-  padding: 27px;
-  padding: 1.6875rem;
+  padding: 22px;
+  padding: 1.375rem;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -723,17 +720,17 @@ header {
 .arrow::before {
   content: "";
   position: absolute;
-  width: 18px;
-  width: 1.125rem;
-  height: 18px;
-  height: 1.125rem;
+  width: 20px;
+  width: 1.25rem;
+  height: 20px;
+  height: 1.25rem;
   border-top: solid 3px #333;
   border-right: solid 3px #333;
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
           transform: translate(-50%, -50%) rotate(-45deg);
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 60%;
 }
 
 .arrow:hover:before {
@@ -886,8 +883,8 @@ header {
 
 .section-contact {
   background-color: #333;
-  padding-top: 44px;
-  padding-top: 2.75rem;
+  padding-top: 60px;
+  padding-top: 3.75rem;
   padding-bottom: 44px;
   padding-bottom: 2.75rem;
 }
@@ -910,8 +907,8 @@ header {
 }
 
 .section-contact__inner {
-  padding: 20px;
-  padding: 1.25rem;
+  padding: 9px 20px 20px;
+  padding: 0.5625rem 1.25rem 1.25rem;
 }
 
 .section-contact__text {
@@ -930,8 +927,8 @@ header {
 }
 
 .section-contact__btn {
-  margin-top: 40px;
-  margin-top: 2.5rem;
+  margin-top: 45px;
+  margin-top: 2.8125rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1669,7 +1666,7 @@ header {
   margin: 0;
   list-style: none;
   text-align: center;
-  z-index: 9999;
+  z-index: 8888;
 }
 
 .slide-dots li {

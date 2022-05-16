@@ -5,7 +5,7 @@
   visibility: hidden;
   opacity: 0;
 }
-//jsでis-fadeinクラスつけて出現させるお
+//jsでis-fadeinクラスつけて出現させる
  .js-scroll-top.is-fadein {
     visibility: visible;
     opacity: 1;
@@ -13,12 +13,12 @@
 // 矢印
 .arrow{
   position: fixed;
-  right: rem(32);
-  bottom: rem(32);
+  right: rem(22);
+  bottom: rem(35);
   color: $background;
   cursor: pointer;
   background-color: $white;
-  padding: rem(27);
+  padding: rem(22);
   transition: all 0.2s ease-in-out;
   
 }
@@ -29,14 +29,14 @@
 .arrow::before {
     content: "";
     position:absolute;
-    width: rem(18);
-    height: rem(18);
+    width: rem(20);
+    height: rem(20);
     border-top: solid 3px $background;
     border-right: solid 3px $background;
     transform:translate(-50% , -50%) rotate(-45deg);
     position:  absolute;
     left: 50%;
-    top:50%;
+    top:60%;
   }
 
   .arrow:hover:before{
