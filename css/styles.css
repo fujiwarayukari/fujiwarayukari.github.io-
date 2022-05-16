@@ -1001,6 +1001,23 @@ header {
   padding-top: 89.36%;
 }
 
+.content-item__image::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.content-item__image:hover::before {
+  opacity: 0.6;
+}
+
 .content-item__image img {
   position: absolute;
   top: 50%;
@@ -1017,10 +1034,13 @@ header {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.45;
+  font-weight: 400;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   width: 100%;
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 51%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
