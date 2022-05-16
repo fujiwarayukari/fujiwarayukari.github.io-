@@ -27,6 +27,9 @@
 }
 
 .sp-nav__item a{
+  font-size: rem(16);
+  letter-spacing: rem(1.5);
+  line-height: 1.4375;
   display: block;
   color: $white;
   padding-top: rem(16);
