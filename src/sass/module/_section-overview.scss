@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .section-overview {
-  padding-top: rem(120);
+  padding-top: rem(113);
   padding-bottom: rem(100);
   position: relative;
 
@@ -14,11 +14,11 @@
 .section-overview::before {
   position: absolute;
   content:'';
-  bottom: 0;
+  bottom: rem(6);
   left: 0;
   z-index: -1;
-  width: calc(355 / 375)* 100%;
-  height: rem(1145);
+  width: calc(314 / 375 * 100%);
+  height: rem(1167);
   background-image: linear-gradient(to left top, transparent 49.9%, $accent-color 50%, $accent-color calc(50.1% + 1px), transparent calc(50.2% + 1px));
 
   @include mq ('md'){
@@ -78,6 +78,7 @@
 }
 
 .section-overview__content {
+  margin-top: rem(39);
   padding: rem(24) rem(20) rem(21);
   color: $white;
   background-color: $background;

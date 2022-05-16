@@ -1,5 +1,8 @@
 @use "global" as *;
 
+.slick-dotted.slick-slider{
+  margin-bottom: rem(24);
+}
 
 .slide-dots {
   position: absolute;

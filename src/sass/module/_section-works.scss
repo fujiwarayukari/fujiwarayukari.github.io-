@@ -51,7 +51,8 @@
 }
 
 .section-works__content {
-  padding: rem(24) rem(20) rem(21);
+  margin-top: rem(-6);
+  padding: 0 rem(20) rem(21);
   color: $white;
   background-color: $background;
 
@@ -63,5 +64,5 @@
 }
 
 .section-works__btn {
-  margin-top: rem(16);
+  margin-top: rem(25);
 }
