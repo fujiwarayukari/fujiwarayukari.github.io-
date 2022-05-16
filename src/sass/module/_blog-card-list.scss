@@ -11,9 +11,10 @@
 
 .blog-card-list::before{
   position: absolute;
+  z-index: 100;
   content: 'New';
-  top: 0;
-  left: 0;
+  top: rem(-14);
+  left: rem(-14);
   background-color: #FFBA6A;
   width: rem(60);
   height: rem(60);

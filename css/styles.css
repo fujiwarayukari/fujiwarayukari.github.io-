@@ -192,9 +192,12 @@ select::-ms-expand {
 
 .blog-card-list::before {
   position: absolute;
+  z-index: 100;
   content: "New";
-  top: 0;
-  left: 0;
+  top: -14px;
+  top: -0.875rem;
+  left: -14px;
+  left: -0.875rem;
   background-color: #FFBA6A;
   width: 60px;
   width: 3.75rem;
@@ -276,8 +279,8 @@ select::-ms-expand {
 
 .blog-card__body {
   color: inherit;
-  padding: 4px 24px;
-  padding: 0.25rem 1.5rem;
+  padding: 7px 24px 0;
+  padding: 0.4375rem 1.5rem 0;
 }
 
 .blog-card__title {
@@ -285,7 +288,6 @@ select::-ms-expand {
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.9444444444;
-  text-align: center;
   letter-spacing: 1px;
   letter-spacing: 0.0625rem;
 }
@@ -298,6 +300,11 @@ select::-ms-expand {
   line-height: 1.8571428571;
   padding-top: 4px;
   padding-top: 0.25rem;
+}
+
+.blog-card__text {
+  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 }
 
 .blog-card__information {
@@ -314,8 +321,8 @@ select::-ms-expand {
 
 .blog-card__category {
   background-color: #FFEA2E;
-  padding: 4px 5px;
-  padding: 0.25rem 0.3125rem;
+  padding: 0 5px;
+  padding: 0 0.3125rem;
   color: #000;
 }
 
@@ -832,8 +839,8 @@ header {
 }
 
 .section-blog__items {
-  margin-top: 64px;
-  margin-top: 4rem;
+  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 @media screen and (min-width: 768px) {
   .section-blog__items {
@@ -1362,8 +1369,8 @@ header {
 .section-overview {
   padding-top: 113px;
   padding-top: 7.0625rem;
-  padding-bottom: 100px;
-  padding-bottom: 6.25rem;
+  padding-bottom: 92px;
+  padding-bottom: 5.75rem;
   position: relative;
 }
 @media screen and (min-width: 768px) {
@@ -1376,8 +1383,8 @@ header {
 .section-overview::before {
   position: absolute;
   content: "";
-  bottom: 14px;
-  bottom: 0.875rem;
+  bottom: 6px;
+  bottom: 0.375rem;
   left: 0;
   z-index: -1;
   width: 83.7333333333%;

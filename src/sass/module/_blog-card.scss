@@ -30,14 +30,13 @@
 
 .blog-card__body {
   color: inherit;
-  padding: rem(4) rem(24);
+  padding: rem(7) rem(24) 0;
 }
 
 .blog-card__title {
   font-size: rem(18);
   font-weight: 500;
   line-height: calc( 35 / 18);
-  text-align: center;
   letter-spacing: rem(1);
 }
 
@@ -49,6 +48,10 @@
   padding-top: rem(4);
 }
 
+.blog-card__text {
+  letter-spacing: rem(1);
+}
+
 .blog-card__information {
   display: flex;
   justify-content: space-between;
@@ -58,7 +61,7 @@
 
 .blog-card__category {
   background-color: $sub-accent-color;
-  padding: rem(4) rem(5);
+  padding: 0 rem(5);
   color: #000;
 }
 
