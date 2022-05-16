@@ -17,7 +17,7 @@
 .btn a {
   display: inline-block;
   width: inherit;
-  padding: rem(10) 0;
+  padding: rem(9) 0;
 
   @include mq ('md'){
     padding: rem(5) rem(22);
