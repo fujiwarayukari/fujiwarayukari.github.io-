@@ -1389,7 +1389,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-overview {
-    padding-top: 9.375rem;
+    padding-top: 12.25rem;
     padding-bottom: 10.25rem;
   }
 }
@@ -1436,7 +1436,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .overview-mt {
-    margin-top: 2.375rem;
+    margin-top: 1.125rem;
   }
 }
 
@@ -1445,7 +1445,7 @@ header {
     max-width: 74.375rem;
     width: 100%;
     margin: 0 auto;
-    padding: 5rem 0;
+    padding: 2.8125rem 0 5rem;
   }
 }
 
@@ -1461,9 +1461,6 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -1490,15 +1487,15 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-overview__content {
-    padding: 0 2rem;
+    padding: 4.1875rem 2rem 0;
     max-width: 35.875rem;
     width: 100%;
   }
 }
 
 .section-overview__btn {
-  margin-top: 26px;
-  margin-top: 1.625rem;
+  margin-top: 8px;
+  margin-top: 0.5rem;
 }
 
 .section-title {
