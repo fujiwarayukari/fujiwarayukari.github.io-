@@ -20,8 +20,9 @@
   padding: rem(9) 0;
 
   @include mq ('md'){
-    padding: rem(5) rem(22);
+    padding: 0 rem(5);
     position: relative;
+    line-height: calc(54 / 16);
   }
 }
 

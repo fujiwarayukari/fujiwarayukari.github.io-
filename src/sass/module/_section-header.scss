@@ -19,7 +19,7 @@
   letter-spacing: rem(2);
   
   @include mq ('md'){
-    padding: rem(48) 0;
+    padding: rem(38) 0;
     line-height: calc(35 / 16);
     letter-spacing: 0;
   }

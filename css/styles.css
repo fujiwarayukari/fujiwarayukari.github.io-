@@ -376,8 +376,9 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .btn a {
-    padding: 0.3125rem 1.375rem;
+    padding: 0 0.3125rem;
     position: relative;
+    line-height: 3.375;
   }
 }
 
@@ -1098,7 +1099,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-header__text {
-    padding: 3rem 0;
+    padding: 2.375rem 0;
     line-height: 2.1875;
     letter-spacing: 0;
   }
@@ -1389,7 +1390,7 @@ header {
 @media screen and (min-width: 768px) {
   .section-overview {
     padding-top: 9.375rem;
-    padding-bottom: 9.375rem;
+    padding-bottom: 10.25rem;
   }
 }
 
@@ -1630,9 +1631,6 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding-left: 1.75rem;
   }
 }
@@ -1654,15 +1652,15 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-works__content {
-    padding: 0 2rem;
+    padding: 2.4375rem 2rem 0;
     max-width: 35.875rem;
     width: 100%;
   }
 }
 
 .section-works__btn {
-  margin-top: 25px;
-  margin-top: 1.5625rem;
+  margin-top: 9px;
+  margin-top: 0.5625rem;
 }
 
 .slick-dotted.slick-slider {

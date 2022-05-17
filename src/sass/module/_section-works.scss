@@ -40,7 +40,6 @@
   @include mq ('md'){
     display:flex;
     justify-content: center;
-    align-items: center;
     padding-left: rem(28);
   }
 }
@@ -59,12 +58,12 @@
   background-color: $background;
 
   @include mq ('md'){
-    padding: 0 rem(32);
+    padding: rem(39) rem(32) 0;
     max-width: rem(574);
     width: 100%;
   }
 }
 
 .section-works__btn {
-  margin-top: rem(25);
+  margin-top: rem(9);
 }
