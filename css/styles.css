@@ -646,8 +646,8 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: inherit;
-  padding: 0 16px 8px 23px;
-  padding: 0 1rem 0.5rem 1.4375rem;
+  padding: 0 16px 0 23px;
+  padding: 0 1rem 0 1.4375rem;
 }
 @media screen and (min-width: 768px) {
   .header__inner {
@@ -1145,7 +1145,7 @@ header {
 .swiper-caption__title--main {
   color: #fff;
   position: absolute;
-  top: 47%;
+  top: 48%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   font-size: 28px;
@@ -1166,7 +1166,7 @@ header {
 .swiper-caption__title--sub {
   color: #fff;
   position: absolute;
-  top: 52%;
+  top: 53%;
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 700;
@@ -1187,8 +1187,8 @@ header {
 }
 
 .section-news__inner {
-  padding: 24px 20px;
-  padding: 1.5rem 1.25rem;
+  padding: 35px 20px;
+  padding: 2.1875rem 1.25rem;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -1206,15 +1206,12 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
 @media screen and (min-width: 768px) {
   .section-news__information {
-    margin-right: 2.5rem;
+    margin-right: 3.5rem;
   }
 }
 
@@ -1223,14 +1220,16 @@ header {
 }
 
 .section-news__date {
-  margin-right: 27px;
-  margin-right: 1.6875rem;
+  margin-right: 42px;
+  margin-right: 2.625rem;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4375;
   letter-spacing: -1px;
   letter-spacing: -0.0625rem;
+  padding-top: 3px;
+  padding-top: 0.1875rem;
 }
 
 .section-news__category {
@@ -1246,7 +1245,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .section-news__body {
-    margin-right: 2rem;
+    margin-right: 2.3125rem;
     max-width: 36.75rem;
     width: 100%;
   }
@@ -1305,7 +1304,8 @@ header {
     color: #000;
     display: block;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 700;
+    letter-spacing: 0;
     border: none;
     text-align: center;
     max-width: 8.4375rem;
@@ -1332,7 +1332,7 @@ header {
   .section-news__btn--pc a {
     display: inline-block;
     width: inherit;
-    padding: 0.25rem 1.25rem;
+    padding: 0.1875rem 1.6875rem;
     position: relative;
   }
 }
