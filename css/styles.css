@@ -947,7 +947,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-content {
-    padding-top: 9.375rem;
+    padding-top: 9.0625rem;
   }
 }
 
@@ -982,8 +982,8 @@ header {
 }
 
 .section-content__items {
-  margin-top: 38px;
-  margin-top: 2.375rem;
+  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .content-lists {
@@ -1010,6 +1010,11 @@ header {
 .content-item__image {
   position: relative;
   padding-top: 89.36%;
+}
+@media screen and (min-width: 768px) {
+  .content-item__image {
+    padding-top: 100%;
+  }
 }
 
 .content-item__image::before {
@@ -1536,7 +1541,6 @@ header {
     left: 0;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    padding-left: 1.5625rem;
   }
 }
 
