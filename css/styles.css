@@ -633,6 +633,8 @@ header {
   height: 3.125rem;
   width: 100vw;
   z-index: 9999;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
 .header__inner {
