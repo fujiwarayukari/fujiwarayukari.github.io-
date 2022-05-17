@@ -1598,10 +1598,10 @@ header {
 @media screen and (min-width: 768px) {
   .section-title__english--left--contact {
     top: -52%;
-    left: 0;
+    left: -1%;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    padding-left: 0.3125rem;
+    padding-left: 1.5625rem;
   }
 }
 

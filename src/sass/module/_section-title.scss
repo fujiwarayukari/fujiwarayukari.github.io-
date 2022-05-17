@@ -58,15 +58,16 @@
     left: 79%;
     transform: translateX(0%);
     padding-right: rem(25);
+    
   }
 }
 
 .section-title__english--left--contact {
   @include mq ('md'){
     top: -52%;
-    left: 0;
+    left: -1%;
     transform: translateX(0%);
-    padding-left: rem(5);
+    padding-left: rem(25);
   }
 }
 
