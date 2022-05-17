@@ -8,7 +8,9 @@
   letter-spacing: rem(1);
   
   @include mq ('md'){
-    margin-top: rem(71);
+    margin-top: rem(57);
     font-size: rem(15);
+    line-height: calc(35 / 15);
+    letter-spacing: rem(1);
   }
 }

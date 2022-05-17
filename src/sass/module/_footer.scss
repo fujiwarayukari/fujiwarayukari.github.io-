@@ -14,7 +14,7 @@ footer {
   text-align: center;
   
   @include mq ('md'){
-    padding: rem(18) rem(15) rem(27) rem(32);
+    padding: rem(25) rem(15) rem(27) rem(32);
   }
 }
 

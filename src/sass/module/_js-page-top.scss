@@ -20,7 +20,10 @@
   background-color: $white;
   padding: rem(22);
   transition: all 0.2s ease-in-out;
-  
+  @include mq ('md'){
+    right: rem(35);
+    bottom: rem(32);
+  }
 }
 .arrow:hover{
   background-color: $background;

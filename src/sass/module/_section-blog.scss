@@ -18,7 +18,7 @@
 
 .section-blog__inner {
   @include mq ('md'){
-    max-width: rem(1115);
+    max-width: rem(1096);
     width: 100%;
     margin: 0 auto;
   }
@@ -33,7 +33,7 @@
 }
 
 .section-blog__btn {
-  margin-top: rem(53);
+  margin-top: rem(47);
   margin-left: auto;
   margin-right: auto;
 }
