@@ -834,8 +834,10 @@ header {
 }
 
 .js-pc-nav__item--white a {
-  padding: 0 38px;
-  padding: 0 2.375rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  padding: 0 31px;
+  padding: 0 1.9375rem;
   height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -903,7 +905,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-blog__items {
-    margin-top: 1.125rem;
+    margin-top: 1.25rem;
   }
 }
 
@@ -991,7 +993,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-contact__btn {
-    margin-top: 3.75rem;
+    margin-top: 3.625rem;
     letter-spacing: 0.375rem;
   }
 }
@@ -1021,7 +1023,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-content::before {
-    top: 2.6875rem;
+    top: 3rem;
     width: 94.6875%;
     height: 75.75rem;
   }
@@ -1044,7 +1046,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-content__items {
-    margin-top: 1.875rem;
+    margin-top: 1.75rem;
   }
 }
 
@@ -1554,7 +1556,7 @@ header {
 @media screen and (min-width: 768px) {
   .section-overview {
     padding-top: 12.25rem;
-    padding-bottom: 12.6875rem;
+    padding-bottom: 12.75rem;
   }
 }
 
@@ -1574,7 +1576,7 @@ header {
   .section-overview::before {
     width: 94.6875%;
     height: 75.75rem;
-    bottom: -11.375rem;
+    bottom: -11.5rem;
     z-index: 0;
   }
 }
@@ -1605,7 +1607,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .overview-mt {
-    margin-top: 1.125rem;
+    margin-top: 1.3125rem;
   }
 }
 
@@ -1656,6 +1658,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-overview__content {
+    margin-top: 0;
     padding: 4.1875rem 2rem 0;
     max-width: 35.875rem;
     width: 100%;
@@ -1838,7 +1841,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-works__btn {
-    margin-top: 0.5625rem;
+    margin-top: 0.75rem;
   }
 }
 
