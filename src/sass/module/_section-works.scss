@@ -22,7 +22,8 @@
   @include mq ('md'){
     margin-top: rem(20);
     background: linear-gradient(90deg, $black 0%, $black 30%, $background 30%, $background 100%);
-
+    z-index: 100;
+    position: relative;
   }
 }
 
