@@ -1078,9 +1078,12 @@ header {
   font-weight: 400;
   letter-spacing: 2px;
   letter-spacing: 0.125rem;
-  text-align: center;
-  padding-left: 22px;
-  padding-left: 1.375rem;
+}
+@media screen and (min-width: 768px) {
+  .section-header__title {
+    font-size: 1.5625rem;
+    letter-spacing: 0;
+  }
 }
 
 .section-header__text {
@@ -1096,6 +1099,8 @@ header {
 @media screen and (min-width: 768px) {
   .section-header__text {
     padding: 3rem 0;
+    line-height: 2.1875;
+    letter-spacing: 0;
   }
 }
 
@@ -1546,8 +1551,8 @@ header {
 
 @media screen and (min-width: 768px) {
   .section-title__english--right--works {
-    top: 15%;
-    left: 67%;
+    top: -7%;
+    left: 69%;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
     padding-right: 1.5625rem;
@@ -1602,6 +1607,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-works__wrapper {
+    margin-top: 1.25rem;
     background: -webkit-gradient(linear, left top, right top, from(#111), color-stop(30%, #111), color-stop(30%, #333), to(#333));
     background: linear-gradient(90deg, #111 0%, #111 30%, #333 30%, #333 100%);
   }
@@ -1627,6 +1633,7 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-left: 1.75rem;
   }
 }
 

@@ -20,6 +20,7 @@
   background-color: $black;
   margin-top: rem(38);
   @include mq ('md'){
+    margin-top: rem(20);
     background: linear-gradient(90deg, $black 0%, $black 30%, $background 30%, $background 100%);
 
   }
@@ -40,6 +41,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    padding-left: rem(28);
   }
 }
 

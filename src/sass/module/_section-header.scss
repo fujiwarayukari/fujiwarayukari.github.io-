@@ -5,8 +5,10 @@
   line-height: calc(29 / 20);
   font-weight: $normal;
   letter-spacing: rem(2);
-  text-align: center;
-  padding-left: rem(22);
+  @include mq ('md'){
+    font-size: rem(25);
+    letter-spacing: 0;
+  }
 }
 
 .section-header__text {
@@ -18,5 +20,7 @@
   
   @include mq ('md'){
     padding: rem(48) 0;
+    line-height: calc(35 / 16);
+    letter-spacing: 0;
   }
 }
