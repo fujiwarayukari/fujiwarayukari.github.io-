@@ -29,8 +29,8 @@
   justify-content: center;
 }
 
-.blog-card-list__item:not(:last-child) {
-  margin-bottom: rem(23);
+.blog-card-list__item {
+  
   @include mq ('md'){
     max-width: calc(33.3333% - rem(25)*2 / 3);
     width: 100%;
@@ -43,6 +43,12 @@
   }
 }
 
+.blog-card-list__item:nth-child(n + 2){
+  margin-top: rem(23);
+  @include mq ('md'){
+    margin-top: 0;
+  }  
+}
 .blog-card-list__item:nth-child(n + 4){
   @include mq ('md'){
     margin-top: rem(25);
