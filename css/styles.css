@@ -834,8 +834,8 @@ header {
 }
 
 .js-pc-nav__item--white a {
-  padding: 0 31px;
-  padding: 0 1.9375rem;
+  padding: 0 38px;
+  padding: 0 2.375rem;
   height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1044,7 +1044,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-content__items {
-    margin-top: 2.1875rem;
+    margin-top: 1.875rem;
   }
 }
 
@@ -1146,6 +1146,7 @@ header {
   .section-header__title {
     font-size: 1.5625rem;
     letter-spacing: 0;
+    text-align: left;
   }
 }
 
@@ -1262,8 +1263,8 @@ header {
 }
 
 .section-news__inner {
-  padding: 19px 20px;
-  padding: 1.1875rem 1.25rem;
+  padding: 21px 20px;
+  padding: 1.3125rem 1.25rem;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -1288,10 +1289,20 @@ header {
 @media screen and (min-width: 768px) {
   .section-news__information {
     margin-right: 3.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-.section-news__date, .news__category {
+.section-news__date,
+.news__category {
   display: inline-block;
 }
 
@@ -1307,20 +1318,29 @@ header {
   padding-top: 3px;
   padding-top: 0.1875rem;
 }
+@media screen and (min-width: 768px) {
+  .section-news__date {
+    margin-right: 3rem;
+  }
+}
 
 .section-news__category {
   line-height: 1;
   font-size: 14px;
   font-size: 0.875rem;
   border: 1px solid #fff;
-  padding: 4px 20px;
-  padding: 0.25rem 1.25rem;
-  min-width: 101px;
-  min-width: 6.3125rem;
+  padding: 7px 20px;
+  padding: 0.4375rem 1.25rem;
 }
 
+.section-news__body {
+  margin-top: 21px;
+  margin-top: 1.3125rem;
+}
 @media screen and (min-width: 768px) {
   .section-news__body {
+    margin-top: 0;
+    margin-top: initial;
     margin-right: 2.3125rem;
     max-width: 36.75rem;
     width: 100%;
@@ -1329,8 +1349,6 @@ header {
 
 .section-news__body a {
   display: block;
-  padding: 21px 0 28px;
-  padding: 1.3125rem 0 1.75rem;
   width: 100%;
   font-size: 16px;
   font-size: 1rem;
@@ -1371,6 +1389,17 @@ header {
             transform-origin: left top;
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
+  }
+}
+
+.section-news__button {
+  margin-top: 28px;
+  margin-top: 1.75rem;
+}
+@media screen and (min-width: 768px) {
+  .section-news__button {
+    margin-top: 0;
+    margin-top: initial;
   }
 }
 
@@ -1481,7 +1510,7 @@ header {
     width: inherit;
     padding: 0.1875rem 1.6875rem;
     position: relative;
-    line-height: 0;
+    line-height: 1.5;
   }
 }
 
