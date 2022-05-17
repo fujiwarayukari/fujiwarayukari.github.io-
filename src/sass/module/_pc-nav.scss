@@ -49,11 +49,12 @@
 
 .js-pc-nav__item--white{
   margin-left: rem(14);
+  color: $background;
+  background-color: $white;
 }
 
 .js-pc-nav__item--white a{
-  color: $background;
-  background-color: $white;
+  
   padding: 0 rem(31);
   height: inherit;
   display: flex;
@@ -83,7 +84,7 @@
   transform:scale(1, 1);
 }
 
-.change-color{
+.js-pc-nav__item--white.change-color{
   background-color: $background;
   color: $white;
 }

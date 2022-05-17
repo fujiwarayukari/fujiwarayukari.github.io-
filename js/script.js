@@ -109,9 +109,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 $(window).on("scroll",function() {
   const mvHeight = $(".u-desktop__mv").height();
   if (mvHeight < $(this).scrollTop()) {
-      $("#js-pc-nav__item--white").addClass('change-color');
+      $(".js-pc-nav__item--white").addClass('change-color');
   } else {
-      $("#js-pc-nav__item--white").removeClass('change-color');
+      $(".js-pc-nav__item--white").removeClass('change-color');
   }   
 });
 
