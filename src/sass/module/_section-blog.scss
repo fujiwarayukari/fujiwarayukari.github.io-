@@ -33,8 +33,11 @@
 }
 
 .section-blog__btn {
-  margin-top: rem(47);
+  margin-top: rem(21);
   margin-left: auto;
   margin-right: auto;
+  @include mq ('md'){
+    margin-top: rem(47);
+  }
 }
 

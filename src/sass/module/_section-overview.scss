@@ -97,5 +97,8 @@
 }
 
 .section-overview__btn {
-  margin-top: rem(8);
+  margin-top: rem(27);
+  @include mq ('md'){
+    margin-top: rem(8);
+  }
 }

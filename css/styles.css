@@ -902,10 +902,15 @@ header {
 }
 
 .section-blog__btn {
-  margin-top: 47px;
-  margin-top: 2.9375rem;
+  margin-top: 21px;
+  margin-top: 1.3125rem;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .section-blog__btn {
+    margin-top: 2.9375rem;
+  }
 }
 
 .section-contact {
@@ -1604,8 +1609,13 @@ header {
 }
 
 .section-overview__btn {
-  margin-top: 8px;
-  margin-top: 0.5rem;
+  margin-top: 27px;
+  margin-top: 1.6875rem;
+}
+@media screen and (min-width: 768px) {
+  .section-overview__btn {
+    margin-top: 0.5rem;
+  }
 }
 
 .section-title {
@@ -1769,8 +1779,8 @@ header {
 }
 
 .section-works__btn {
-  margin-top: 26px;
-  margin-top: 1.625rem;
+  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .section-works__btn {
