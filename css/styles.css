@@ -760,11 +760,11 @@ header {
   border-right: solid 3px #fff;
 }
 
-.pc-nav {
+.pc-nav, .js-pc-nav__item--white {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .pc-nav {
+  .pc-nav, .js-pc-nav__item--white {
     display: block;
     height: inherit;
     -webkit-box-align: center;
@@ -826,26 +826,37 @@ header {
           transform: scale(1, 1);
 }
 
-.pc-nav__item.pc-nav__item--white {
+.js-pc-nav__item--white {
   margin-left: 14px;
   margin-left: 0.875rem;
 }
 
-.pc-nav__item.pc-nav__item--white a {
+.js-pc-nav__item--white a {
   color: #333;
   background-color: #fff;
   padding: 0 31px;
   padding: 0 1.9375rem;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
 
-.pc-nav__item.pc-nav__item--white a:hover {
+.js-pc-nav__item--white a:hover {
   color: #fff;
   background-color: #111;
   padding: 0 31px;
   padding: 0 1.9375rem;
 }
 
-.pc-nav__item.pc-nav__item--white a::after {
+.js-pc-nav__item--white a::after {
   position: absolute;
   content: "";
   width: calc(100% - 4rem);
@@ -863,9 +874,14 @@ header {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.pc-nav__item.pc-nav__item--white a:hover::after {
+.js-pc-nav__item--white a:hover::after {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
+}
+
+.change-color {
+  background-color: #333;
+  color: #fff;
 }
 
 .section-blog {

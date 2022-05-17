@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.pc-nav {
+.pc-nav, .js-pc-nav__item--white {
   display: none;
   @include mq ('md'){
     display: block;
@@ -47,22 +47,27 @@
   transform:scale(1, 1);
 }
 
-.pc-nav__item.pc-nav__item--white{
+.js-pc-nav__item--white{
   margin-left: rem(14);
 }
 
-.pc-nav__item.pc-nav__item--white a{
+.js-pc-nav__item--white a{
   color: $background;
   background-color: $white;
   padding: 0 rem(31);
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-.pc-nav__item.pc-nav__item--white a:hover{
+.js-pc-nav__item--white a:hover{
   color: $white;
   background-color: $black;
   padding: 0 rem(31);
 }
 
-.pc-nav__item.pc-nav__item--white a::after{
+.js-pc-nav__item--white a::after{
   position: absolute;
   content:'';
   width: calc( 100% - rem(64));
@@ -74,6 +79,11 @@
   transition:transform 0.3s;
 }
 
-.pc-nav__item.pc-nav__item--white a:hover::after{
+.js-pc-nav__item--white a:hover::after{
   transform:scale(1, 1);
+}
+
+.change-color{
+  background-color: $background;
+  color: $white;
 }

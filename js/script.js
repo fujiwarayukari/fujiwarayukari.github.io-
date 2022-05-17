@@ -105,6 +105,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
+  // headerをスクロールするとお問い合わせの背景色が変わる
+$(window).on("scroll",function() {
+  const mvHeight = $(".u-desktop__mv").height();
+  if (mvHeight < $(this).scrollTop()) {
+      $("#js-pc-nav__item--white").addClass('change-color');
+  } else {
+      $("#js-pc-nav__item--white").removeClass('change-color');
+  }   
+});
 
 
 });
