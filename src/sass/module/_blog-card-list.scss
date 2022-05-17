@@ -32,7 +32,7 @@
 .blog-card-list__item {
   
   @include mq ('md'){
-    max-width: calc(33.3333% - rem(25)*2 / 3);
+    max-width: calc(33.3333% - rem(25)*2 / 3); 
     width: 100%;
   }
 }

@@ -24,6 +24,8 @@
   @include mq ('md'){
     width: calc(1212 / 1280)* 100%;
     height: rem(1212);
+    bottom: rem(-182);
+    
   }
 }
 

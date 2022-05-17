@@ -854,7 +854,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-blog__items {
-    margin-top: 3rem;
+    margin-top: 1.125rem;
   }
 }
 
@@ -884,8 +884,8 @@ header {
 }
 
 .section-blog__btn {
-  margin-top: 22px;
-  margin-top: 1.375rem;
+  margin-top: 53px;
+  margin-top: 3.3125rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1416,6 +1416,7 @@ header {
   .section-overview::before {
     width: 94.6875%;
     height: 75.75rem;
+    bottom: -11.375rem;
   }
 }
 
