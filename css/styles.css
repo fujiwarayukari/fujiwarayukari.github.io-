@@ -1619,7 +1619,7 @@ header {
     max-width: 74.375rem;
     width: 100%;
     margin: 0 auto;
-    padding: 5rem 0;
+    padding: 5rem 0 3.125rem;
   }
 }
 
@@ -1670,7 +1670,7 @@ header {
 
 .slide-dots {
   position: absolute;
-  bottom: -25px;
+  bottom: -37px;
   display: block;
   width: 100%;
   padding: 0;
