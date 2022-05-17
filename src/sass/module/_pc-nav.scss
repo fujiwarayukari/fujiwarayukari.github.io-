@@ -87,4 +87,5 @@
 .js-pc-nav__item--white.change-color{
   background-color: $background;
   color: $white;
+  transition: color 0.8s ease-out;
 }
