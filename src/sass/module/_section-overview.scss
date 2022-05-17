@@ -7,7 +7,7 @@
 
   @include mq ('md'){
     padding-top: rem(196);
-    padding-bottom: rem(164);
+    padding-bottom: rem(203);
   }
 }
 
@@ -32,6 +32,7 @@
   width: 100%;
   @include mq ('md'){
     max-width: rem(515);
+    margin-top: rem(-13);
   }
 }
 
@@ -44,7 +45,6 @@
 }
 
 .overview-mt {
-
   @include mq ('md'){
   margin-top: rem(18);
   }
