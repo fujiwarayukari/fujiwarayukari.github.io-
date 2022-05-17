@@ -49,48 +49,62 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
 
-// メインビューswiper
-const swiper = new Swiper(".swiper", {
-  loop: true,
-  effect: 'fade',
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  speed: 2000,
-});
-
-
-
-// slickスライダー
-$(".slider").slick({
-  arrows: false, //矢印消す
-  autoplay: true,  //自動再生
-  autoplaySpeed: 2000,
-  dots: true,  //ページネーション表示
-  dotsClass: "slide-dots", //class名を変更する(デフォルトのスタイル解除)（デフォルトはslick-dots）
-});
-
-
-// トップへ戻るボタン
-var page_top = $('#js-scroll-top')
-  $(window).scroll(function () {
-    //どれくらいスクロールしたら出現させるか
-    if ($(this).scrollTop() > 450) {
-      page_top.addClass('is-fadein')
-    } else {
-      page_top.removeClass('is-fadein')
-    }
-  })
-  page_top.on('click', function () {
-    $('body,html').animate(
-      {
-        scrollTop: 0,
+    // メインビューswiper
+    const swiper = new Swiper(".swiper", {
+      loop: true,
+      effect: 'fade',
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
       },
-      500
-    )
-    return false
-  })
+      speed: 2000,
+    });
+
+
+
+  // slickスライダー
+  $(".slider").slick({
+    arrows: false, //矢印消す
+    autoplay: true,  //自動再生
+    autoplaySpeed: 2000,
+    dots: true,  //ページネーション表示
+    dotsClass: "slide-dots", //class名を変更する(デフォルトのスタイル解除)（デフォルトはslick-dots）
+  });
+
+
+  // トップへ戻るボタン
+  var page_top = $('#js-scroll-top')
+    $(window).scroll(function () {
+      //どれくらいスクロールしたら出現させるか
+      if ($(this).scrollTop() > 450) {
+        page_top.addClass('is-fadein')
+      } else {
+        page_top.removeClass('is-fadein')
+      }
+    })
+    page_top.on('click', function () {
+      $('body,html').animate(
+        {
+          scrollTop: 0,
+        },
+        500
+      )
+      return false
+    });
+
+  
+  // ヘッダー色変更
+  var mvh = $('.u-desktop__mv').height();
+
+  $(window).scroll(function() {
+    var top = $(window).scrollTop();
+    if (mvh < top) {
+      $('header').css('background-color', 'rgba(17,17,17)');
+      } else {
+      $('header').css('background-color', 'rgba(17,17,17,0.5)');
+    }
+  });
+
 
 
 });
