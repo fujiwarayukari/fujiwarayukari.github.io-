@@ -5,6 +5,7 @@
   line-height: calc(29 / 20);
   font-weight: $normal;
   letter-spacing: rem(2);
+  text-align: center;
   @include mq ('md'){
     font-size: rem(25);
     letter-spacing: 0;

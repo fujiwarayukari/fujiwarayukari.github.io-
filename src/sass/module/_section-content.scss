@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .section-content {
-  padding-top: rem(117);
+  padding-top: rem(127);
   position: relative;
 
   @include mq ('md'){
@@ -14,12 +14,13 @@
   content:'';
   width: calc(355 / 375)* 100%;
   height: rem(649);
-  top: rem(43);
-  left: -7px;
+  top: rem(100);
+  left: 0;
   z-index: -1;
   background-image: linear-gradient(to right top, transparent 49.9%, $accent-color 50%, $accent-color calc(50.1% + 1px), transparent calc(50.2% + 1px));
 
   @include mq ('md'){
+    top: rem(43);
     width: calc(1212 / 1280)* 100%;
     height: rem(1212);
   }
@@ -34,7 +35,10 @@
 }
 
 .section-content__items {
-  margin-top: rem(30);
+  margin-top: rem(35);
+  @include mq ('md'){
+    margin-top: rem(35);
+  }
 }
 
 .content-lists {
