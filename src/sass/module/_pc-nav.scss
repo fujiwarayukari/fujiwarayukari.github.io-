@@ -56,6 +56,11 @@
   background-color: $white;
   padding: 0 rem(31);
 }
+.pc-nav__item.pc-nav__item--white a:hover{
+  color: $white;
+  background-color: $black;
+  padding: 0 rem(31);
+}
 
 .pc-nav__item.pc-nav__item--white a::after{
   position: absolute;
