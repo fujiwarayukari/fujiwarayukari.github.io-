@@ -1587,8 +1587,8 @@ header {
 
 @media screen and (min-width: 768px) {
   .section-title__english--right--blog {
-    top: 15%;
-    left: 77%;
+    top: -19%;
+    left: 79%;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
     padding-right: 1.5625rem;
