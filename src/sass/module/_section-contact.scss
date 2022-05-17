@@ -5,7 +5,7 @@
   padding-bottom: rem(44);
 
   @include mq ('md'){
-    padding-top: rem(148);
+    padding-top: rem(140);
     padding-bottom: rem(130);
   }
 }
@@ -40,5 +40,6 @@
   margin-right: auto;
   @include mq ('md'){
     margin-top: rem(60);
+    letter-spacing: rem(6);
     }
 }

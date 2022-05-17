@@ -1,15 +1,19 @@
 @use "global" as *;
 
+.section-blog {
+  background-color: $black;
+  padding: 0 rem(20) rem(120);
+  
+  @include mq ('md'){
+    padding: 0 rem(20) rem(150);
+  }
+}
+
 .section-blog__items {
   margin-top: rem(50);
   @include mq ('md'){
     margin-top: rem(18);
   }
-}
-
-.section-blog {
-  background-color: $black;
-  padding: 0 rem(20) rem(120);
 }
 
 .section-blog__inner {
