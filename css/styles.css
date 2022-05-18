@@ -706,6 +706,7 @@ header {
   transition: opacity 1s;
   visibility: hidden;
   opacity: 0;
+  z-index: 500;
 }
 
 .js-scroll-top.is-fadein {
@@ -1790,6 +1791,7 @@ header {
     margin-top: 1.25rem;
     background: -webkit-gradient(linear, left top, right top, from(#111), color-stop(30%, #111), color-stop(30%, #333), to(#333));
     background: linear-gradient(90deg, #111 0%, #111 30%, #333 30%, #333 100%);
+    z-index: 100;
     position: relative;
   }
 }
