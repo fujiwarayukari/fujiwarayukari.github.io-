@@ -50,6 +50,7 @@
 }
 
 .section-news__category {
+  display: inline-block;
   line-height: 1;
   font-size: rem(14);
   border: 1px solid $white;

@@ -1327,6 +1327,7 @@ header {
 }
 
 .section-news__category {
+  display: inline-block;
   line-height: 1;
   font-size: 14px;
   font-size: 0.875rem;
