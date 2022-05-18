@@ -289,8 +289,8 @@ select::-ms-expand {
 
 .blog-card__body {
   color: inherit;
-  padding: 7px 24px 0;
-  padding: 0.4375rem 1.5rem 0;
+  padding: 7px 23px 0;
+  padding: 0.4375rem 1.4375rem 0;
 }
 
 .blog-card__title {
@@ -986,8 +986,8 @@ header {
 }
 
 .section-contact__btn {
-  margin-top: 45px;
-  margin-top: 2.8125rem;
+  margin-top: 46px;
+  margin-top: 2.875rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1015,8 +1015,8 @@ header {
   width: 94.6666666667%;
   height: 649px;
   height: 40.5625rem;
-  top: 100px;
-  top: 6.25rem;
+  top: 93px;
+  top: 5.8125rem;
   left: 0;
   z-index: -1;
   background-image: linear-gradient(to right top, transparent 49.9%, #F9F871 50%, #F9F871 calc(50.1% + 1px), transparent calc(50.2% + 1px));
