@@ -43,6 +43,7 @@
 
   @include mq ('md'){
     bottom: rem(-37);
+    background-color: transparent;
   }
 }
 
