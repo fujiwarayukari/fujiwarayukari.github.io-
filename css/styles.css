@@ -1162,7 +1162,7 @@ header {
 }
 
 .u-desktop img {
-  height: 100vh;
+  height: auto;
   width: 100%;
   display: block;
 }
@@ -1201,7 +1201,7 @@ header {
           animation: zoomUp 10s linear 0s 1 normal both;
 }
 
-.slide-img {
+.section-mainview {
   position: relative;
 }
 
@@ -1209,6 +1209,7 @@ header {
   display: block;
   padding: 0 16px;
   padding: 0 1rem;
+  z-index: 100;
 }
 
 .swiper-caption__title--main {

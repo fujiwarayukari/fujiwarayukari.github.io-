@@ -26,14 +26,16 @@
   animation: zoomUp 10s linear 0s 1 normal both;  
 }
 
+
 // 文字を重ねる
-.slide-img {
+.section-mainview {
   position: relative;
 }
 
 .swiper-caption__title {
   display: block;
   padding: 0 rem(16);
+  z-index: 100;
 }
 
 .swiper-caption__title--main {
