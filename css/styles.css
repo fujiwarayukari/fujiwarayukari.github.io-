@@ -1093,6 +1093,7 @@ header {
   list-style: none;
   text-align: center;
   z-index: 8888;
+  background-color: #333;
 }
 @media screen and (min-width: 768px) {
   .slide-dots {
