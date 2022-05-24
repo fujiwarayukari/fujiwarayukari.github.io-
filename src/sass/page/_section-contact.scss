@@ -5,7 +5,7 @@
   padding-bottom: rem(44);
 
   @include mq ('md'){
-    padding-top: rem(140);
+    padding-top: rem(137);
     padding-bottom: rem(130);
   }
 }
@@ -23,6 +23,8 @@
 }
 
 .section-contact__text {
+  margin-left: auto;
+  margin-right: auto;
   color: $white;
   font-size: rem(16);
   line-height: calc(23 / 16);
@@ -40,6 +42,14 @@
   margin-right: auto;
   @include mq ('md'){
     margin-top: rem(58);
+    margin-left: auto;
+    margin-right: auto;
     letter-spacing: rem(6);
     }
+}
+
+.btn-span-contact {
+  @include mq ('md'){
+    letter-spacing: rem(3);
+  }
 }

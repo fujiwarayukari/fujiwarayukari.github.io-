@@ -68,6 +68,12 @@
 .section-works__btn {
   margin-top: rem(27);
   @include mq ('md'){
-    margin-top: rem(12);
+    margin-top: rem(10);
+    
   }
+}
+
+.btn-a-works {
+  margin-left: 0;
+  margin-right: 0;
 }

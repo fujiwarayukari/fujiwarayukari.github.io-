@@ -109,29 +109,3 @@ $mediaquerys: (
 }
 
 
-////////////////////
-// ボタン
-////////////////////
-$initType: 'normal';
-@mixin btn($type: $initType){
-    background-color: $background;
-    color: $white;
-    border: 1px solid $white;
-    display: block;
-    font-size: rem(20);
-    font-weight: $normal;
-    line-height: calc(29 / 20);
-    letter-spacing: rem(2);
-    text-align: center;
-    cursor: pointer;
-    max-width: rem(335);
-    width: 100%;
-    margin: 0 auto;
-
-    @include mq ('md'){
-      font-size: rem(16);
-      max-width: rem(360);
-      margin: initial;
-      font-weight: 500;
-  }
-}
