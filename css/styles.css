@@ -1391,7 +1391,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .btn-span-contact {
-    letter-spacing: 0.1875rem;
+    letter-spacing: 0.40625rem;
   }
 }
 
