@@ -17,10 +17,12 @@
 }
 
 .section-blog__inner {
+  max-width: rem(600);
+  width: 100%;
+  margin: 0 auto;
+
   @include mq ('md'){
     max-width: rem(1096);
-    width: 100%;
-    margin: 0 auto;
   }
 }
 

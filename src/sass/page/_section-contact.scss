@@ -20,6 +20,11 @@
 
 .section-contact__inner{
   padding: rem(9) rem(20) rem(20);
+  @include mq ('md'){
+    max-width:$inner;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .section-contact__text {
