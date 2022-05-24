@@ -1845,9 +1845,11 @@ header {
   }
 }
 
-.btn-a-overview {
-  margin-left: 0;
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .btn-a-overview {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .section-works {
@@ -1940,8 +1942,10 @@ header {
   }
 }
 
-.btn-a-works {
-  margin-left: 0;
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .btn-a-works {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

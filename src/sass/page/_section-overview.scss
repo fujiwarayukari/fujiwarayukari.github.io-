@@ -104,6 +104,8 @@
 }
 
 .btn-a-overview {
-  margin-left: 0;
-  margin-right: 0;
+  @include mq ('md'){
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
