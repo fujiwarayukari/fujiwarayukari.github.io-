@@ -75,14 +75,22 @@ a{
   border: 1px solid $white;
   margin-left: auto;
   margin-right: auto;
-  width: 240px;
-  height: 48px;
-  line-height: 48px;
+  max-width: rem(335);
+  width: 100%;
+  padding: rem(9) 0;
+  line-height: calc(29 / 20);
   display: flex;
   text-align: center;
   background: $background;
   font-size: rem(20);
   overflow: hidden;
+
+  @include mq ('md'){
+    font-size: rem(16);
+    max-width: rem(360);
+    padding: rem(17) 0;
+    font-weight: 500;
+  }
 }
 
 .btn-span{
@@ -101,12 +109,11 @@ a{
   bottom: 0;
   right: 0;
   left: 0;
-  // width: 0;
   transform: translateX(-100%);
   display: block;
   background: $white;
   z-index: -1;
-  transition: .2s;
+  transition: .3s;
 }
 
 .btn-span:hover{
@@ -114,7 +121,6 @@ a{
 }
 
 .btn-span:hover:before{
-  // width: 100%;
   transform: translateX(0);
 }
 

@@ -344,9 +344,12 @@ a {
   border: 1px solid #fff;
   margin-left: auto;
   margin-right: auto;
-  width: 240px;
-  height: 48px;
-  line-height: 48px;
+  max-width: 335px;
+  max-width: 20.9375rem;
+  width: 100%;
+  padding: 9px 0;
+  padding: 0.5625rem 0;
+  line-height: 1.45;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,6 +358,14 @@ a {
   font-size: 20px;
   font-size: 1.25rem;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .btn-a {
+    font-size: 1rem;
+    max-width: 22.5rem;
+    padding: 1.0625rem 0;
+    font-weight: 500;
+  }
 }
 
 .btn-span {
@@ -379,8 +390,8 @@ a {
   display: block;
   background: #fff;
   z-index: -1;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .btn-span:hover {
