@@ -442,6 +442,8 @@ a {
 
 .content-item__image:hover::before {
   opacity: 0.6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .content-item__image img {
