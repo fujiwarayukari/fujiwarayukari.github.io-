@@ -70,25 +70,22 @@
   }
 }
 
-.section-overview__image {
-  position: relative;
+.section-overview__image-wrapper{
   width: 100%;
-  
   @include mq ('md'){
-    // max-width: rem(557);
-    // width: 100%;
+    max-width: rem(557);
     margin-right: rem(32);
   }
 }
 
-.section-overview__image::before{
-    content:"";
-    display: block;
-    padding-top: 69.6%;
-
-    @include mq ('md'){
+.section-overview__image {
+  position: relative;
+  width: 100%;
+  padding-top: 69.6%;
+  
+  @include mq ('md'){    
     padding-top: 69.8384201%;
-    }
+  }
 }
 
 .section-overview__image img{

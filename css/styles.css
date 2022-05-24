@@ -1809,23 +1809,23 @@ a {
   }
 }
 
-.section-overview__image {
-  position: relative;
+.section-overview__image-wrapper {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .section-overview__image {
+  .section-overview__image-wrapper {
+    max-width: 34.8125rem;
     margin-right: 2rem;
   }
 }
 
-.section-overview__image::before {
-  content: "";
-  display: block;
+.section-overview__image {
+  position: relative;
+  width: 100%;
   padding-top: 69.6%;
 }
 @media screen and (min-width: 768px) {
-  .section-overview__image::before {
+  .section-overview__image {
     padding-top: 69.8384201%;
   }
 }
