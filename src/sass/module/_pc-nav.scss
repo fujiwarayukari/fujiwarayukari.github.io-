@@ -61,31 +61,33 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  transition:0.5s;
 }
 .js-pc-nav__item--white a:hover{
   color: $white;
   background-color: $black;
   padding: 0 rem(31);
+  transition:0.5s;
 }
 
-.js-pc-nav__item--white a::after{
-  position: absolute;
-  content:'';
-  width: calc( 100% - rem(64));
-  height: 1px;
-  background-color: $sub-accent-color;
-  bottom:rem(8);
-  transform: scale(0, 1);
-  transform-origin:center top;
-  transition:transform 0.3s;
-}
+// .js-pc-nav__item--white a::after{
+//   position: absolute;
+//   content:'';
+//   width: calc( 100% - rem(64));
+//   height: 1px;
+//   background-color: $sub-accent-color;
+//   bottom:rem(8);
+//   transform: scale(0, 1);
+//   transform-origin:center top;
+//   transition:transform 0.3s;
+// }
 
-.js-pc-nav__item--white a:hover::after{
-  transform:scale(1, 1);
-}
+// .js-pc-nav__item--white a:hover::after{
+//   transform:scale(1, 1);
+// }
 
-.js-pc-nav__item--white.change-color{
-  background-color: $background;
-  color: $white;
-  transition: color 0.8s ease-out;
-}
+// .js-pc-nav__item--white.change-color{
+//   background-color: $background;
+//   color: $white;
+//   transition: color 0.8s ease-out;
+// }
