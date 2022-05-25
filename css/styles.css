@@ -1225,6 +1225,8 @@ header {
 }
 
 .u-mobile img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100vw;
   height: 100vh;
   display: block;
