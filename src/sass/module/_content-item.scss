@@ -5,6 +5,7 @@
   display: block;
   max-width: 50%;
   width: 100%;
+  font-size: rem(20);
   @include mq ('md'){
     max-width: 25%;
     width: 100%;

@@ -94,6 +94,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -409,6 +410,8 @@ a {
   display: block;
   max-width: 50%;
   width: 100%;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .content-item {
@@ -604,6 +607,8 @@ footer {
   padding-bottom: 0.25rem;
   width: 100%;
   font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 2px;
   letter-spacing: 0.125rem;
 }
@@ -716,10 +721,10 @@ header {
   background-color: rgba(17, 17, 17, .5);
   height: 50px;
   height: 3.125rem;
-  width: 100%;
+  width: 100vw;
   z-index: 9999;
-  -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .header__inner {
@@ -1214,13 +1219,13 @@ header {
 .u-desktop img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: block;
 }
 
 .u-mobile img {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: block;
 }
@@ -1946,5 +1951,9 @@ a {
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+* {
+  outline: 1px solid pink;
 }
 /*# sourceMappingURL=styles.css.map */
