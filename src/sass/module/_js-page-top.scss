@@ -7,15 +7,17 @@
   z-index: 500;
 }
 //jsでis-fadeinクラスつけて出現させる
- .js-scroll-top.is-fadein {
+.js-scroll-top.is-fadein {
     visibility: visible;
     opacity: 1;
   }
 // 矢印
 .arrow{
   position: fixed;
-  right: rem(22);
-  bottom: rem(35);
+  right: rem(35);
+    bottom: rem(32);
+  // right: rem(22);
+  // bottom: rem(35);
   color: $background;
   cursor: pointer;
   background-color: $white;

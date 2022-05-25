@@ -29,15 +29,6 @@
   }
 }
 
-.english-title-overview {
-  max-width: rem(242);
-  width: 100%;
-  @include mq ('md'){
-    max-width: rem(515);
-    margin-top: rem(-13);
-  }
-}
-
 .section-overview__wrapper {
   background-color: $black;
   @include mq ('md'){

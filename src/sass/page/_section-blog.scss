@@ -26,13 +26,6 @@
   }
 }
 
-.english-title-blog {
-  max-width: rem(114);
-  width: 100%;
-  @include mq ('md'){
-    max-width: rem(242);
-  }
-}
 
 .section-blog__btn {
   margin-top: rem(21);

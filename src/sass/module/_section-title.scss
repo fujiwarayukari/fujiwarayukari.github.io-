@@ -7,6 +7,7 @@
   position: relative;
   @include mq ('md'){
     max-width: $inner;
+    padding: 0 rem(25);
   }
 }
 
@@ -24,50 +25,61 @@
     font-size: rem(30);
     letter-spacing: rem(0.5);
   }
-
 }
 
 .section-title__english {
+  position: relative;
   position: absolute;
-  top: -44%;
+  top: -65%;
   left: 50%;
   transform: translateX(-50%);
+  color: $accent-color;
+  opacity: 0.2;
+  font-weight: $normal;
+  line-height: calc(72 / 50);
+  font-size: rem(50);
+  letter-spacing: rem(2);
+  font-family: $second-font-family;
+  
+  @include mq ('md'){
+    font-size: rem(110);
+    line-height: calc(158 / 110);
+    top: 0%;
+    left: 0%;
+  }
 }
 
 .section-title__english--left {
   @include mq ('md'){
-    top: 15%;
-    left: -1%;
+    width: 100%;
     transform: translateX(0%);
-    padding-left: 1.5625rem;
+    top: -30%;
   }
 }
 
 .section-title__english--right--works {
   @include mq ('md'){
-    top: -7%;
-    left: 69%;
+    width: 100%;
+    text-align: right;
+    top: -45%;
     transform: translateX(0%);
-    padding-right: rem(25);
   }
 }
 
 .section-title__english--right--blog {
   @include mq ('md'){
-    top: -19%;
-    left: 79%;
+    width: 100%;
+    text-align: right;
+    top: -57%;
     transform: translateX(0%);
-    padding-right: rem(25);
-    
   }
 }
 
 .section-title__english--left--contact {
   @include mq ('md'){
-    top: -52%;
-    left: -1%;
+    width: 100%;
+    top: -98%;
     transform: translateX(0%);
-    padding-left: rem(25);
   }
 }
 

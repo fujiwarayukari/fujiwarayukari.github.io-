@@ -10,13 +10,6 @@
   }
 }
 
-.english-title-contact{
-  max-width: rem(201);
-  width: 100%;
-  @include mq ('md'){
-    max-width: rem(422);
-  }
-}
 
 .section-contact__inner{
   padding: rem(9) rem(20) rem(20);

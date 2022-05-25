@@ -513,7 +513,7 @@ a {
 
 footer {
   background-color: #111;
-  width: 100vw;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   footer {
@@ -716,7 +716,7 @@ header {
   background-color: rgba(17, 17, 17, .5);
   height: 50px;
   height: 3.125rem;
-  width: 100vw;
+  width: 100%;
   z-index: 9999;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
@@ -787,10 +787,10 @@ header {
 
 .arrow {
   position: fixed;
-  right: 22px;
-  right: 1.375rem;
-  bottom: 35px;
-  bottom: 2.1875rem;
+  right: 35px;
+  right: 2.1875rem;
+  bottom: 32px;
+  bottom: 2rem;
   color: #333;
   cursor: pointer;
   background-color: #fff;
@@ -978,6 +978,7 @@ header {
 @media screen and (min-width: 768px) {
   .section-title {
     max-width: 1100px;
+    padding: 0 1.5625rem;
   }
 }
 
@@ -1002,50 +1003,66 @@ header {
 }
 
 .section-title__english {
+  position: relative;
   position: absolute;
-  top: -44%;
+  top: -65%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  color: #F9F871;
+  opacity: 0.2;
+  font-weight: 400;
+  line-height: 1.44;
+  font-size: 50px;
+  font-size: 3.125rem;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  font-family: "'Noto Serif JP', serif";
+}
+@media screen and (min-width: 768px) {
+  .section-title__english {
+    font-size: 6.875rem;
+    line-height: 1.4363636364;
+    top: 0%;
+    left: 0%;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .section-title__english--left {
-    top: 15%;
-    left: -1%;
+    width: 100%;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    padding-left: 1.5625rem;
+    top: -30%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .section-title__english--right--works {
-    top: -7%;
-    left: 69%;
+    width: 100%;
+    text-align: right;
+    top: -45%;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    padding-right: 1.5625rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .section-title__english--right--blog {
-    top: -19%;
-    left: 79%;
+    width: 100%;
+    text-align: right;
+    top: -57%;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    padding-right: 1.5625rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .section-title__english--left--contact {
-    top: -52%;
-    left: -1%;
+    width: 100%;
+    top: -98%;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    padding-left: 1.5625rem;
   }
 }
 
@@ -1318,17 +1335,6 @@ header {
   }
 }
 
-.english-title-blog {
-  max-width: 114px;
-  max-width: 7.125rem;
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .english-title-blog {
-    max-width: 15.125rem;
-  }
-}
-
 .section-blog__btn {
   margin-top: 21px;
   margin-top: 1.3125rem;
@@ -1352,17 +1358,6 @@ header {
   .section-contact {
     padding-top: 8.5625rem;
     padding-bottom: 8.125rem;
-  }
-}
-
-.english-title-contact {
-  max-width: 201px;
-  max-width: 12.5625rem;
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .english-title-contact {
-    max-width: 26.375rem;
   }
 }
 
@@ -1444,17 +1439,6 @@ header {
     top: 3rem;
     width: 94.6875%;
     height: 75.75rem;
-  }
-}
-
-.english-title-content {
-  max-width: 205px;
-  max-width: 12.8125rem;
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .english-title-content {
-    max-width: 27.5rem;
   }
 }
 
@@ -1757,18 +1741,6 @@ a {
   }
 }
 
-.english-title-overview {
-  max-width: 242px;
-  max-width: 15.125rem;
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .english-title-overview {
-    max-width: 32.1875rem;
-    margin-top: -0.8125rem;
-  }
-}
-
 .section-overview__wrapper {
   background-color: #111;
 }
@@ -1892,17 +1864,6 @@ a {
 @media screen and (min-width: 768px) {
   .section-works {
     padding-top: 12rem;
-  }
-}
-
-.english-title-works {
-  max-width: 161px;
-  max-width: 10.0625rem;
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .english-title-works {
-    max-width: 21.75rem;
   }
 }
 

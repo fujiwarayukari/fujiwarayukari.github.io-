@@ -26,14 +26,6 @@
   }
 }
 
-.english-title-content {
-  max-width: rem(205);
-  width: 100%;
-  @include mq ('md'){
-    max-width: rem(440);
-  }
-}
-
 .section-content__items {
   margin-top: rem(36);
   @include mq ('md'){
