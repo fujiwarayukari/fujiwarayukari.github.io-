@@ -12,8 +12,8 @@
 .section-content::before {
   position: absolute;
   content:'';
-  width: calc(355 / 375)* 100%;
-  height: rem(649);
+  width: 100%;
+  height: rem(687);
   top: rem(93);
   left: 0;
   z-index: -1;

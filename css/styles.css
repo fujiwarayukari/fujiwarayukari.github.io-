@@ -859,6 +859,11 @@ header {
   letter-spacing: 0.125rem;
 }
 
+.pc-nav__item:nth-of-type(5) {
+  margin-right: 14px;
+  margin-right: 0.875rem;
+}
+
 .pc-nav__item a {
   height: inherit;
   display: -webkit-box;
@@ -899,8 +904,6 @@ header {
 }
 
 .js-pc-nav__item--white {
-  margin-left: 14px;
-  margin-left: 0.875rem;
   color: #333;
   background-color: #fff;
 }
@@ -1066,6 +1069,10 @@ header {
   }
 }
 
+.section-title-space {
+  position: relative;
+}
+
 .slider-image {
   position: relative;
   width: 100%;
@@ -1092,11 +1099,6 @@ header {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.slick-dotted.slick-slider {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
 }
 
 .slide-dots {
@@ -1425,9 +1427,9 @@ header {
 .section-content::before {
   position: absolute;
   content: "";
-  width: 94.6666666667%;
-  height: 649px;
-  height: 40.5625rem;
+  width: 100%;
+  height: 687px;
+  height: 42.9375rem;
   top: 93px;
   top: 5.8125rem;
   left: 0;

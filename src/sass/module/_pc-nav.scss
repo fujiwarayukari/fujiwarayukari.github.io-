@@ -21,6 +21,10 @@
   letter-spacing: rem(2);
 }
 
+.pc-nav__item:nth-of-type(5){
+  margin-right: rem(14);
+}
+
 .pc-nav__item a {
   height: inherit;
   display: flex;
@@ -48,7 +52,7 @@
 }
 
 .js-pc-nav__item--white{
-  margin-left: rem(14);
+  // margin-left: rem(14);
   color: $background;
   background-color: $white;
 }
