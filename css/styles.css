@@ -1043,6 +1043,10 @@ header {
   }
 }
 
+.section-title__english--left-overview {
+  top: -47%;
+}
+
 @media screen and (min-width: 768px) {
   .section-title__english--right--works {
     top: -45%;
