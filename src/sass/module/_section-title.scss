@@ -44,39 +44,43 @@
   @include mq ('md'){
     font-size: rem(110);
     line-height: calc(158 / 110);
-    top: 0%;
-    // left: 0%;
+    top: 0%;    
+    left: initial;
   }
 }
 
-.section-title__english--left {
+.section-title__english--content {
   @include mq ('md'){
     transform: translateX(0%);
     top: -30%;
     left: 1%;
   }
 }
-.section-title__english--left-overview {
-  top:-47%
-}
 
-.section-title__english--right--works {
+.section-title__english--works {
   @include mq ('md'){
     top: -45%;
-    left: 68%;
+    right: 1%;
     transform: translateX(0%);
   }
 }
 
-.section-title__english--right--blog {
+.section-title__english-overview {
+  @include mq ('md'){
+    top:-47%;
+    left:1%;
+    transform: translateX(0%);
+  }
+}
+.section-title__english--blog {
   @include mq ('md'){
     top: -57%;
-    left: 78%;
+    right: 0%;
     transform: translateX(0%);
   }
 }
 
-.section-title__english--left--contact {
+.section-title__english--contact {
   @include mq ('md'){
     width: 100%;
     top: -98%;
