@@ -51,26 +51,24 @@
 
 .section-title__english--left {
   @include mq ('md'){
-    width: 100%;
     transform: translateX(0%);
     top: -30%;
+    left: 1%;
   }
 }
 
 .section-title__english--right--works {
   @include mq ('md'){
-    width: 100%;
-    text-align: right;
     top: -45%;
+    left: 68%;
     transform: translateX(0%);
   }
 }
 
 .section-title__english--right--blog {
   @include mq ('md'){
-    width: 100%;
-    text-align: right;
     top: -57%;
+    left: 78%;
     transform: translateX(0%);
   }
 }
@@ -79,6 +77,7 @@
   @include mq ('md'){
     width: 100%;
     top: -98%;
+    left: 1%;
     transform: translateX(0%);
   }
 }

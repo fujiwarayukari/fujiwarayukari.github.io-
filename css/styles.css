@@ -94,7 +94,6 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  overflow-x: hidden;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -1038,18 +1037,17 @@ header {
 
 @media screen and (min-width: 768px) {
   .section-title__english--left {
-    width: 100%;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
     top: -30%;
+    left: 1%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .section-title__english--right--works {
-    width: 100%;
-    text-align: right;
     top: -45%;
+    left: 68%;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
@@ -1057,9 +1055,8 @@ header {
 
 @media screen and (min-width: 768px) {
   .section-title__english--right--blog {
-    width: 100%;
-    text-align: right;
     top: -57%;
+    left: 78%;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
@@ -1069,6 +1066,7 @@ header {
   .section-title__english--left--contact {
     width: 100%;
     top: -98%;
+    left: 1%;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
@@ -1953,9 +1951,5 @@ a {
     margin-left: 0;
     margin-right: 0;
   }
-}
-
-* {
-  outline: 1px solid pink;
 }
 /*# sourceMappingURL=styles.css.map */
