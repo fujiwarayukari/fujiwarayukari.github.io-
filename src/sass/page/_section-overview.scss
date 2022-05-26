@@ -30,9 +30,9 @@
 }
 
 .section-overview__wrapper {
-  background-color: $black;
+  // background-color: $black;
   @include mq ('md'){
-    background: linear-gradient(90deg, $background 0%, $background 70%, $black 70%, $black 100%);
+    background: linear-gradient(90deg, $background 0%, $background 70%, transparent 70%, transparent 100%);
     position: relative;
   }
 }
