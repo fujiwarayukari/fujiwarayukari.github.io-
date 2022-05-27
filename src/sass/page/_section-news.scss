@@ -38,12 +38,12 @@
 }
 
 .section-news__date {
-  margin-right: rem(28);
+  margin-right: rem(25);
   font-size: rem(16);
   font-weight: $normal;
   line-height: calc(23 / 16);
   letter-spacing: rem(-1);
-  padding-top: rem(3);
+  padding-top: rem(8);
 @include mq ('md'){
   margin-right: rem(48);
 }
@@ -55,7 +55,7 @@
   font-size: rem(14);
   font-weight: $normal;
   border: 1px solid $white;
-  padding: rem(7) 0;
+  padding: rem(8) 0;
   width: rem(100);
   text-align: center;
 
@@ -65,7 +65,7 @@
 }
 
 .section-news__body {
-  margin-top: rem(21);
+  margin-top: rem(16);
   @include mq ('md'){
     margin-top: initial; //初期化
     margin-right: rem(37);
@@ -109,7 +109,7 @@
 }
 
 .section-news__btn {
-  margin-top: rem(28);
+  margin-top: rem(26);
   @include mq ('md'){
     margin-top: initial;
     width: rem(133);
