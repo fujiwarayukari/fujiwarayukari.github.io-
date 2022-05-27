@@ -283,8 +283,8 @@ select::-ms-expand {
 
 .blog-card__body {
   color: inherit;
-  padding: 7px 23px 0;
-  padding: 0.4375rem 1.4375rem 0;
+  padding: 7px 20px 0;
+  padding: 0.4375rem 1.25rem 0;
 }
 
 .blog-card__title {
@@ -324,7 +324,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .blog-card__information {
-    padding: 0.8125rem 1.5rem 1rem;
+    padding: 0.5625rem 1.5rem 1rem;
   }
 }
 
@@ -1373,7 +1373,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-contact {
-    padding-top: 8.5625rem;
+    padding-top: 8.6875rem;
     padding-bottom: 8.125rem;
   }
 }
@@ -1435,7 +1435,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-content {
-    padding-top: 9.0625rem;
+    padding-top: 9.375rem;
   }
 }
 
@@ -1480,7 +1480,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-news__inner {
-    padding: 2.1875rem 1.25rem;
+    padding: 2rem 1.25rem;
     max-width: 67.625rem;
     margin: 0 auto;
   }
@@ -1877,7 +1877,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .section-works {
-    padding-top: 12rem;
+    padding-top: 12.25rem;
   }
 }
 
