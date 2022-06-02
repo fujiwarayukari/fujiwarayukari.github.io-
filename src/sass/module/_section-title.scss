@@ -5,11 +5,16 @@
   width: 100%;
   margin: 0 auto;
   position: relative;
+  // padding-bottom: rem(36);
   @include mq ('md'){
     max-width: $inner;
     padding: 0 rem(25);
   }
 }
+
+// .section-contact__title {
+//   padding-bottom: 0;
+// }
 
 .section-title__header {
   width: inherit;

@@ -50,7 +50,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
     // メインビューswiper
-    const swiper = new Swiper(".swiper", {
+    const slider4 = new Swiper(".slider4", {
       loop: true,
       effect: 'fade',
       autoplay: {
@@ -59,6 +59,71 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       },
       speed: 2000,
     });
+
+    var slider1 = new Swiper ('.slider1', {
+      effect: 'slide',
+      autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
+          
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+  });
+  
+  
+  var slider2 = new Swiper ('.slider2', {
+      effect: 'fade',
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      speed: 2000,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+  });
+  
+  
+  var slider3 = new Swiper ('.slider3', {
+      effect: 'cube',
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      speed: 2000,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+  });
 
 
 
